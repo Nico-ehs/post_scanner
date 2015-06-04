@@ -1,0 +1,10 @@
+
+
+
+<ul>
+  <% @sites.each do |site| %>
+    <li>
+      <%= "#{site.name} #{site.posts.count}" %>
+    </li>
+  <% end %>
+</ul>
