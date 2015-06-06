@@ -21,7 +21,7 @@ ActiveRecord::Schema.define(version: 20150520190330) do
 
   create_table "comments", force: true do |t|
     t.integer  "post_id"
-    t.string   "text"
+    t.text     "text"
     t.string   "author"
     t.datetime "time"
     t.integer  "html_id"
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(version: 20150520190330) do
     t.string   "title"
     t.string   "author"
     t.time     "time"
-    t.string   "text"
+    t.text     "text"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
