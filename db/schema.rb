@@ -15,6 +15,7 @@ ActiveRecord::Schema.define(version: 20150520190330) do
 
   create_table "authors", force: true do |t|
     t.string   "name"
+    t.integer  "site_id"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -23,6 +24,7 @@ ActiveRecord::Schema.define(version: 20150520190330) do
     t.integer  "post_id"
     t.text     "text"
     t.string   "author"
+    t.integer  "author_id"
     t.datetime "time"
     t.integer  "html_id"
     t.string   "depth"
@@ -31,9 +33,11 @@ ActiveRecord::Schema.define(version: 20150520190330) do
   end
 
   create_table "posts", force: true do |t|
+    t.integer  "site_id"
     t.integer  "html_id"
     t.string   "title"
     t.string   "author"
+    t.integer  "author_id"
     t.time     "time"
     t.text     "text"
     t.datetime "created_at"

@@ -3,7 +3,7 @@
     <li>
       <%= link_to "#{post.title}", post_url(post) %>
       <%= "#{post.comments.count}" %>
-      <%= line_chart post.comments.group(:author).count %>
+      <%= column_chart post.comments.group(:author).count %>
     </li>
   <% end %>
 </ul>

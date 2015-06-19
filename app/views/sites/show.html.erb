@@ -1,0 +1,11 @@
+<%= "#{@site.sitename} #{@posts.count}" %>
+
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+      <%= link_to "#{post.title}", post_url(post) %>
+      <%= "#{post.comments.count}" %>
+      <%= column_chart post.comments.group(:author).count %>
+    </li>
+  <% end %>
+</ul>

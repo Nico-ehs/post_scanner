@@ -1,4 +1,6 @@
 class Post < ActiveRecord::Base
-    # belongs_to :site
+    belongs_to :site
     has_many :comments
+    
+
 end
