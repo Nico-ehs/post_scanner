@@ -1,9 +1,10 @@
 <ul>
   <% @posts.each do |post| %>
     <li>
-      <%= link_to "#{post.title}", post_url(post) %>
-      <%= "#{post.comments.count}" %>
-      <%= column_chart post.comments.group(:author).count %>
+      <%= "Post title" %>
+      <%= link_to "#{el.post.title}", post_url(post) %>
+      <%= "Text" %>
+      <%= "#{el.text}" %>
     </li>
   <% end %>
 </ul>

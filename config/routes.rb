@@ -2,6 +2,7 @@ Rails.application.routes.draw do
   root 'sites#index'
   resources :sites
   resources :posts
+  resources :authors
   get 'webscanner/' => 'webscanner#show'
   post 'webscanner/scan' => 'webscanner#scan_test'
   post 'webscanner/load' => 'webscanner#load_test'

@@ -1,0 +1,8 @@
+<ul>
+  <% @Authors.each do |el| %>
+    <li>
+      <%= link_to "#{el.name}", author_url(el) %>
+      <%= "#{el.name} #{site.comments.count}" %>
+    </li>
+  <% end %>
+</ul>
