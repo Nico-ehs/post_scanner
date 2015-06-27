@@ -13,6 +13,9 @@
 
 ActiveRecord::Schema.define(version: 20150520190330) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "authors", force: true do |t|
     t.string   "name"
     t.integer  "site_id"
@@ -23,11 +26,12 @@ ActiveRecord::Schema.define(version: 20150520190330) do
   create_table "comments", force: true do |t|
     t.integer  "post_id"
     t.text     "text"
-    t.string   "author_name"
+    t.string   "comment_author_name"
     t.integer  "author_id"
-    t.datetime "time"
+    t.datetime "comment_time"
     t.integer  "html_id"
     t.string   "depth"
+    t.integer  "comment_size"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -36,10 +40,11 @@ ActiveRecord::Schema.define(version: 20150520190330) do
     t.integer  "site_id"
     t.integer  "html_id"
     t.string   "title"
-    t.string   "author_name"
+    t.string   "post_author_name"
     t.integer  "author_id"
-    t.time     "time"
+    t.datetime "post_time"
     t.text     "text"
+    t.integer  "post_size"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

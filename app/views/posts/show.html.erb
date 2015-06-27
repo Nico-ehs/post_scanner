@@ -1,0 +1,36 @@
+<%= "Site: " %>
+<%= link_to "#{@post.site.sitename}", site_url(@post.site) %>
+
+<%= "Comments: #{@post.comments.count}" %>
+
+<li>
+  <%= "Comment replies" %>
+  <%= @post.comments.where("2 > 1").count %>
+</li>
+
+<li>
+  <%= "Comments by author" %>
+  <%= column_chart @post.comments.group(:comment_author_name).count %>
+</li>
+<li>
+  <%= "Comments by day" %>
+  <%= column_chart @post.comments.group_by_day(:comment_time).count %>
+</li>
+
+<li>
+  <%= "Raito of comments to post text " %>
+  <%=  "#{@post.comments.sum('comment_size')/(1.0*@post.post_size)}" %>
+</li>
+
+
+
+<li>
+<%=  "#{@post.comments.sum('comment_size')}" %>
+</li>
+
+<li>
+<%=  "#{(1.0*@post.post_size)}" %>
+</li>
+
+
+<%= "Comments: #{@post.comments.count}" %>

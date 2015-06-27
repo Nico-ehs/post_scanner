@@ -4,10 +4,11 @@ class CreatePosts < ActiveRecord::Migration
       t.integer :site_id
       t.integer :html_id
       t.string :title
-      t.string :author_name
+      t.string :post_author_name
       t.integer :author_id
-      t.time :time
+      t.datetime :post_time
       t.text :text
+      t.integer :post_size
 
 
       t.timestamps

@@ -1,0 +1,18 @@
+
+
+<ul>
+  <% @posts.each do |post| %>
+    <li>
+      <%= link_to "#{post.title}", post_url(post) %>
+      <%= "Comments: #{post.comments.count}" %>
+      <li>
+        <%= "Comments by" %>
+        <%= column_chart post.comments.group(:author_name).count %>
+      </li>
+      <li>
+        <%= "Comments by" %>
+        <%= column_chart post.comments.group(:author_name).count %>
+      </li>
+    </li>
+  <% end %>
+</ul>

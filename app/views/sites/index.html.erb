@@ -2,7 +2,7 @@
   <% @sites.each do |site| %>
     <li>
       <%= link_to "#{site.sitename}", site_url(site) %>
-      <%= "#{site.sitename} #{site.posts.count}" %>
+      <%= "Posts: #{site.posts.count} Comments: #{site.comments.count}  " %>
     </li>
   <% end %>
 </ul>

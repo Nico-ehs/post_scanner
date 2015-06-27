@@ -1,11 +1,32 @@
-<%= "#{@site.sitename} #{@posts.count}" %>
+<%= "#{@site.sitename} Posts:  #{@posts.count}" %>
+
+
+<li>
+  <%= "Posts by month" %>
+  <%= column_chart @site.posts.group_by_month(:post_time).count %>
+</li>
+<li>
+  <%= "Comments by day" %>
+  <%= column_chart @site.comments.group_by_day(:comment_time).count %>
+</li>
+<li>
+  <%= "Commenters" %>
+  <%= column_chart @site.comments.group(:comment_author_name).count %>
+</li>
+<li>
+  <%= "Commenters with 10+ comments" %>
+  <%= column_chart @site.comments.group(:comment_author_name).having("COUNT(*) > 10").size %>
+</li>
+
+
+
+
 
 <ul>
   <% @posts.each do |post| %>
     <li>
       <%= link_to "#{post.title}", post_url(post) %>
-      <%= "#{post.comments.count}" %>
-      <%= column_chart post.comments.group(:author_name).count %>
-    </li>
+      <%= "Comments: #{post.comments.count}" %>
   <% end %>
 </ul>
+

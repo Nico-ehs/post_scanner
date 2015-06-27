@@ -1,10 +1,19 @@
+
+
+
+
+
+
 <ul>
-  <% @posts.each do |post| %>
+  <% @posts.each do |el| %>
     <li>
       <%= "Post title" %>
-      <%= link_to "#{el.post.title}", post_url(post) %>
-      <%= "Text" %>
-      <%= "#{el.text}" %>
+      <%= link_to "#{el.title}", post_url(el) %>
+      <%= "Text:" %>
+      <%= "#{el.text[0..50]}" %>
+      <%= column_chart el.comments.group_by_month(:comment_time).count %>
+      <%= "Comments by" %>
+      <%= column_chart el.comments.group(:author_name).having("COUNT(*) > 10").count %>
     </li>
   <% end %>
 </ul>

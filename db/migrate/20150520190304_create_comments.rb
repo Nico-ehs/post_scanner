@@ -3,11 +3,12 @@ class CreateComments < ActiveRecord::Migration
     create_table :comments do |t|
       t.integer :post_id
       t.text :text
-      t.string :author_name
+      t.string :comment_author_name
       t.integer :author_id
-      t.datetime :time
+      t.datetime :comment_time
       t.integer :html_id
       t.string :depth
+      t.integer :comment_size
       
       
       t.timestamps
