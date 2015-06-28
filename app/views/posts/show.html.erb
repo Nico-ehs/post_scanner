@@ -24,13 +24,3 @@
 
 
 
-<li>
-<%=  "#{@post.comments.sum('comment_size')}" %>
-</li>
-
-<li>
-<%=  "#{(1.0*@post.post_size)}" %>
-</li>
-
-
-<%= "Comments: #{@post.comments.count}" %>
