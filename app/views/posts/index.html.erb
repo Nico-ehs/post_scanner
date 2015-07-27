@@ -13,7 +13,7 @@
       <%= "#{el.text[0..50]}" %>
       <%= column_chart el.comments.group_by_month(:comment_time).count %>
       <%= "Comments by" %>
-      <%= column_chart el.comments.group(:author_name).having("COUNT(*) > 10").count %>
+      <%= column_chart el.comments.group(:comment_author_name).having("COUNT(*) > 10").count %>
     </li>
   <% end %>
 </ul>

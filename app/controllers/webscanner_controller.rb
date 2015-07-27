@@ -35,8 +35,10 @@ class WebscannerController < ApplicationController
             end
 	        posts=eval(File.read("Post Scanner//site data//#{site}//posts.txt"))
 	        posts.each do |el|
-	    	    Post.create(site_id: Site.find_by_sitename(el[0]).id, html_id: el[1], title: el[2], post_author_name: el[3],
-	    	    post_time: el[4], text: el[5], post_size: el[5].size)
+	            unless el[2]==""
+	    	        Post.create(site_id: Site.find_by_sitename(el[0]).id, html_id: el[1], title: el[2], post_author_name: el[3],
+	    	        post_time: el[4], text: el[5], post_size: el[5].size)
+	    	    end
 	        end
 	        comments=eval(File.read("Post Scanner//site data//#{site}//comments.txt"))
 	        comments.each do |el|

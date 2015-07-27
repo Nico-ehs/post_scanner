@@ -219,11 +219,11 @@ wordpress_functions_comments_1=[fn1,
 fns_1=wordpress_functions_comments_1
 fns_2=wordpress_functions_post_1
 
-##t1=open("Taking Root 1.1 _ Twig.htm", "r", encoding='utf-8').read()
-##t2=entry_parser(get_comments(t1),fns_1,comment)
-##print(t2.output[5])
-##open("comment_test1.html", "w", encoding='utf-8').write(str(t2.output))
-##open("post_test1.html", "w", encoding='utf-8').write(str(post(get_post(t1),fns_2).output()))
+# t1=open("Taking Root 1.1 _ Twig.htm", "r", encoding='utf-8').read()
+# t2=entry_parser(get_comments(t1),fns_1,comment)
+# print(t2.output[5])
+# open("comment_test1.html", "w", encoding='utf-8').write(str(t2.output))
+# open("post_test1.html", "w", encoding='utf-8').write(str(post(get_post(t1),fns_2).output()))
 
 
 def save_file(filename,text,path):
