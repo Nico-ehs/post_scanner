@@ -19,10 +19,10 @@ class WebscannerController < ApplicationController
     end
     
     def run_scan
-        Dir.chdir("Post Scanner") do
+        # Dir.chdir("Post Scanner") do
             # system('python3 "post scanner.py"')
-            system('python3 "parser.py"') 
-        end
+            # system('python3 "parser.py"') 
+        # end
         # File.write("scan_input.txt", scan_input)
         # system("python webscanner.py")
     end

@@ -3,19 +3,20 @@
 
 <li>
   <%= "Posts by month" %>
-  <%= column_chart @site.posts.group_by_month(:post_time).count %>
+  <%= "#{format_day(@site.posts.group_by_month(:post_time).count)}"[0..50] %>
+  <%= column_chart remove_empty(@site.posts.group_by_month(:post_time).count) %>
 </li>
 <li>
   <%= "Comments by day" %>
-  <%= column_chart @site.comments.group_by_day(:comment_time).count %>
+  <%= column_chart remove_empty(@site.comments.group_by_day(:comment_time).count) %>
 </li>
 <li>
   <%= "Commenters" %>
-  <%= column_chart @site.comments.group(:comment_author_name).count %>
+  <%= column_chart remove_empty(@site.comments.group(:comment_author_name).count) %>
 </li>
 <li>
   <%= "Commenters with 10+ comments" %>
-  <%= column_chart @site.comments.group(:comment_author_name).having("COUNT(*) > 10").size %>
+  <%= column_chart remove_empty(@site.comments.group(:comment_author_name).having("COUNT(*) > 10").size) %>
 </li>
 
 

@@ -9,8 +9,6 @@
     <li>
       <%= "Post title" %>
       <%= link_to "#{el.title}", post_url(el) %>
-      <%= "Text:" %>
-      <%= "#{el.text[0..50]}" %>
       <%= column_chart el.comments.group_by_month(:comment_time).count %>
       <%= "Comments by" %>
       <%= column_chart el.comments.group(:comment_author_name).having("COUNT(*) > 10").count %>
