@@ -1,0 +1,9 @@
+rails server -b $IP -p $PORT
+
+<%= column_chart remove_empty(@site.comments.group_by_day(:comment_time).count).map {|k, v| [k.to_datetime().to_date, v] }.to_h %>
+
+authors map
+
+
+authors.split(" |")[0]
+[0..-3]

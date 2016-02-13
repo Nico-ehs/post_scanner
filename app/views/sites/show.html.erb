@@ -8,7 +8,8 @@
 </li>
 <li>
   <%= "Comments by day" %>
-  <%= column_chart remove_empty(@site.comments.group_by_day(:comment_time).count) %>
+  <%= (@site.comments.group_by_day(:comment_time).count).reject{|k,v| v==0}.keys[0].to_datetime().to_date %>
+  <%= column_chart remove_empty(@site.comments.group_by_day(:comment_time).count).map {|k, v| [k.to_datetime().to_date, v] }.to_h %>
 </li>
 <li>
   <%= "Commenters" %>

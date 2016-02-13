@@ -58,20 +58,6 @@ class site_data():
 
 
 
-def linktest_1(link):
-    r=1
-    linktest=[]
-    linktest+=["https://twigserial.wordpress.com/20" in link]
-    linktest+=['#' not in link]
-    linktest+=['?' not in link]
-    linktest+=[link[-1]==r"/"]
-    linktest+=['"' not in link]
-    linktest+=['feed' not in link]
-    for x in linktest:
-        if x==False:
-            r=0
-    return r
-
 def remove_multiple(list_in):
     r=[]
     for x in list_in:
@@ -89,10 +75,7 @@ def add_new(list_1,list_2):
     print(str(t2-t1))
     return r
 
-def link_fn1(text):
-    links=extract_links.extract_m(text)
-    vaild_links=[x for x in links if linktest_1(x)==1]
-    return vaild_links
+
 
 
 def save_file(filename,text,path):
@@ -176,17 +159,34 @@ def get_sitelist():
     return True
 
 
-url="https://twigserial.wordpress.com/2014/12/24/taking-root-1-1/"
-scan1=site_data('twig', url, link_fn1)
-scan1.full_scan()
-f_out=open('test.txt', "w", encoding='utf-8')
-f_out.write(str(scan1.pagelist))
-f_out.close
-scan1.save_output()
-get_sitelist()
 
+def linktest_1(link):
+    r=1
+    linktest=[]
+    linktest+=["https://twigserial.wordpress.com/20" in link]
+    linktest+=['#' not in link]
+    linktest+=['?' not in link]
+    linktest+=[link[-1]==r"/"]
+    linktest+=['"' not in link]
+    linktest+=['feed' not in link]
+    for x in linktest:
+        if x==False:
+            r=0
+    return r
 
+def link_fn1(text):
+    links=extract_links.extract_m(text)
+    vaild_links=[x for x in links if linktest_1(x)==1]
+    return vaild_links
 
+# url="https://twigserial.wordpress.com/2014/12/24/taking-root-1-1/"
+# scan1=site_data('twig', url, link_fn1)
+# scan1.full_scan()
+# f_out=open('test.txt', "w", encoding='utf-8')
+# f_out.write(str(scan1.pagelist))
+# f_out.close
+# scan1.save_output()
+# get_sitelist()
 
 
 
@@ -194,12 +194,13 @@ get_sitelist()
 # def linktest_2(link):
 #     r=1
 #     linktest=[]
-#     linktest+=["http://slatestarcodex.com/20/" in link]
+#     linktest+=["http://slatestarcodex.com/20" in link]
 #     linktest+=['#' not in link]
 #     linktest+=['?' not in link]
 #     linktest+=[link[-1]==r"/"]
 #     linktest+=['"' not in link]
 #     linktest+=['feed' not in link]
+#     # print('test2')
 #     for x in linktest:
 #         if x==False:
 #             r=0
@@ -207,6 +208,7 @@ get_sitelist()
 
 # def link_fn2(text):
 #     links=extract_links.extract_m(text)
+#     print(len(links))
 #     vaild_links=[x for x in links if linktest_2(x)==1]
 #     return vaild_links
 

@@ -1,1 +1,1 @@
-[u'http://slatestarcodex.com/']
+['http://slatestarcodex.com/']
