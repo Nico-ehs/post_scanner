@@ -1,0 +1,16 @@
+<ul>
+  <% @sites.each do |site| %>
+    <li>
+      <%= "Site Name: #{site.name} Veiws: #{site.impressionist_count}  " %>
+    </li>
+  <% end %>
+</ul>
+
+<ul>
+  <% @posts.each do |el| %>
+    <li>
+      <%= "Post Name: #{el.title} Veiws: #{el.impressionist_count}  " %>
+    </li>
+  <% end %>
+</ul>
+

@@ -4,6 +4,7 @@ Rails.application.routes.draw do
   resources :posts
   resources :comments
   resources :authors
+  get 'veiws/' => 'veiws#show'
   get 'webscanner/' => 'webscanner#show'
   post 'webscanner/scan' => 'webscanner#scan_test'
   post 'webscanner/load' => 'webscanner#load_test'

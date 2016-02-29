@@ -1,4 +1,6 @@
 class SitesController < ApplicationController
+    impressionist
+    
     def show
         @site=Site.find(params[:id])
         @posts=@site.posts

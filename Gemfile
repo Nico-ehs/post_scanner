@@ -61,3 +61,4 @@ gem 'rails_12factor', '0.0.2'
 
 gem 'chartkick'
 gem 'groupdate'
+gem 'impressionist'

@@ -3,12 +3,10 @@
 
 <li>
   <%= "Posts by month" %>
-  <%= "#{format_day(@site.posts.group_by_month(:post_time).count)}"[0..50] %>
   <%= column_chart remove_empty(@site.posts.group_by_month(:post_time).count) %>
 </li>
 <li>
   <%= "Comments by day" %>
-  <%= (@site.comments.group_by_day(:comment_time).count).reject{|k,v| v==0}.keys[0].to_datetime().to_date %>
   <%= column_chart remove_empty(@site.comments.group_by_day(:comment_time).count).map {|k, v| [k.to_datetime().to_date, v] } %>
 </li>
 <li>
