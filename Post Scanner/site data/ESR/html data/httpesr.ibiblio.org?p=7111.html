@@ -1,0 +1,1861 @@
+<!DOCTYPE html>
+<!--[if IE 6]> <html id="ie6" class="no-js" lang="en-US"> <![endif]-->
+<!--[if IE 7]> <html id="ie7" class="no-js" lang="en-US"> <![endif]-->
+<!--[if IE 8]> <html id="ie8" class="no-js" lang="en-US"> <![endif]-->
+<!--[if !(IE 6) | !(IE 7) | !(IE 8)  ]><!-->
+<html class="no-js" lang="en-US">
+<!--<![endif]-->
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Too clever by half | Armed and Dangerous </title>
+<link rel="profile" href="http://gmpg.org/xfn/11" />
+<link rel="stylesheet" type="text/css" media="all" href="http://esr.ibiblio.org/wp-content/themes/admired/style.css" />
+<link rel="pingback" href="http://esr.ibiblio.org/xmlrpc.php" />
+<link rel="alternate" type="application/rss+xml" title="Armed and Dangerous &raquo; Feed" href="http://esr.ibiblio.org/?feed=rss2" />
+<link rel="alternate" type="application/rss+xml" title="Armed and Dangerous &raquo; Comments Feed" href="http://esr.ibiblio.org/?feed=comments-rss2" />
+<link rel="alternate" type="application/rss+xml" title="Armed and Dangerous &raquo; Too clever by half Comments Feed" href="http://esr.ibiblio.org/?feed=rss2&#038;p=7111" />
+		<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"http:\/\/s.w.org\/images\/core\/emoji\/72x72\/","ext":".png","source":{"concatemoji":"http:\/\/esr.ibiblio.org\/wp-includes\/js\/wp-emoji-release.min.js?ver=4.4"}};
+			!function(a,b,c){function d(a){var c=b.createElement("canvas"),d=c.getContext&&c.getContext("2d");return d&&d.fillText?(d.textBaseline="top",d.font="600 32px Arial","flag"===a?(d.fillText(String.fromCharCode(55356,56806,55356,56826),0,0),c.toDataURL().length>3e3):("simple"===a?d.fillText(String.fromCharCode(55357,56835),0,0):d.fillText(String.fromCharCode(55356,57135),0,0),0!==d.getImageData(16,16,1,1).data[0])):!1}function e(a){var c=b.createElement("script");c.src=a,c.type="text/javascript",b.getElementsByTagName("head")[0].appendChild(c)}var f,g;c.supports={simple:d("simple"),flag:d("flag"),unicode8:d("unicode8")},c.DOMReady=!1,c.readyCallback=function(){c.DOMReady=!0},c.supports.simple&&c.supports.flag&&c.supports.unicode8||(g=function(){c.readyCallback()},b.addEventListener?(b.addEventListener("DOMContentLoaded",g,!1),a.addEventListener("load",g,!1)):(a.attachEvent("onload",g),b.attachEvent("onreadystatechange",function(){"complete"===b.readyState&&c.readyCallback()})),f=c.source||{},f.concatemoji?e(f.concatemoji):f.wpemoji&&f.twemoji&&(e(f.twemoji),e(f.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+		<style type="text/css">
+img.wp-smiley,
+img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel='stylesheet' id='jetpack-subscriptions-css'  href='http://esr.ibiblio.org/wp-content/plugins/jetpack/modules/subscriptions/subscriptions.css?ver=4.4' type='text/css' media='all' />
+<link rel='stylesheet' id='quotescollection-style-css'  href='http://esr.ibiblio.org/wp-content/plugins/quotes-collection/quotes-collection.css?ver=1.5.7' type='text/css' media='all' />
+<link rel='stylesheet' id='wp-syntax-css-css'  href='http://esr.ibiblio.org/wp-content/plugins/wp-syntax/css/wp-syntax.css?ver=1.0' type='text/css' media='all' />
+<link rel='stylesheet' id='jetpack-widgets-css'  href='http://esr.ibiblio.org/wp-content/plugins/jetpack/modules/widgets/widgets.css?ver=20121003' type='text/css' media='all' />
+<link rel='stylesheet' id='white-css'  href='http://esr.ibiblio.org/wp-content/themes/admired/skins/white.css' type='text/css' media='all' />
+<script type='text/javascript' src='http://esr.ibiblio.org/wp-includes/js/jquery/jquery.js?ver=1.11.3'></script>
+<script type='text/javascript' src='http://esr.ibiblio.org/wp-includes/js/jquery/jquery-migrate.min.js?ver=1.2.1'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var QCAjax = {"ajaxurl":"http:\/\/esr.ibiblio.org\/wp-admin\/admin-ajax.php","nonce":"69cf1f3340","nextquote":"Next quote\u00a0\u00bb","loading":"Loading...","error":"Error getting quote","auto_refresh_max":"30","auto_refresh_count":"0"};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://esr.ibiblio.org/wp-content/plugins/quotes-collection/quotes-collection.js?ver=1.5.7'></script>
+<script type='text/javascript' src='http://esr.ibiblio.org/wp-content/plugins/wp-plus-one/wp-plus-one.js?ver=4.4'></script>
+<script type='text/javascript' src='http://esr.ibiblio.org/wp-content/themes/admired/js/modernizr-2.0.6.js?ver=2.0.6'></script>
+<script type='text/javascript' src='http://esr.ibiblio.org/wp-content/themes/admired/js/superfish/hoverIntent.js?ver=4.4'></script>
+<script type='text/javascript' src='http://esr.ibiblio.org/wp-content/themes/admired/js/superfish/superfish.js?ver=4.4'></script>
+<link rel='https://api.w.org/' href='http://esr.ibiblio.org/?rest_route=/' />
+<link rel="EditURI" type="application/rsd+xml" title="RSD" href="http://esr.ibiblio.org/xmlrpc.php?rsd" />
+<link rel="wlwmanifest" type="application/wlwmanifest+xml" href="http://esr.ibiblio.org/wp-includes/wlwmanifest.xml" /> 
+<link rel='prev' title='This may be the week the SJWs lost it all' href='http://esr.ibiblio.org/?p=7095' />
+<link rel='next' title='TPP and the Law of Unintended Consequences' href='http://esr.ibiblio.org/?p=7123' />
+<meta name="generator" content="WordPress 4.4" />
+<link rel="canonical" href="http://esr.ibiblio.org/?p=7111" />
+<link rel='shortlink' href='http://wp.me/p29oV6-1QH' />
+<link rel="alternate" type="application/json+oembed" href="http://esr.ibiblio.org/?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fesr.ibiblio.org%2F%3Fp%3D7111" />
+<link rel="alternate" type="text/xml+oembed" href="http://esr.ibiblio.org/?rest_route=%2Foembed%2F1.0%2Fembed&#038;url=http%3A%2F%2Fesr.ibiblio.org%2F%3Fp%3D7111&#038;format=xml" />
+	
+<style type="text/css">
+body, input, textarea, .page-title span, .pingback a.url { font-family: Arial, sans-serif;}
+#site-title, #site-description { font-family: Arial, sans-serif;}
+#nav-menu .menu-header,#nav-menu2 .menu-header, div.menu {font-weight: normal;}
+.sf-menu a.sf-with-ul { padding-right: 2.25em;} 
+#nav-menu2 a{ line-height: 33px;} 
+#site-title a { color: #2e57e8;}
+#site-description{ color: #0a010a;}
+#branding #searchform { top: 0;}
+</style><!-- end of style section -->
+
+<script>
+	jQuery(function(){jQuery('ul.sf-menu').superfish({animation: {opacity:'show',height:'show'}, speed: 300});});
+	</script>
+
+<!-- End of Theme options -->
+<link rel="author" href="https://plus.google.com/+EricRaymond" title="Eric Raymond on Google+" /> 
+
+<!-- Jetpack Open Graph Tags -->
+<meta property="og:type" content="article" />
+<meta property="og:title" content="Too clever by half" />
+<meta property="og:url" content="http://esr.ibiblio.org/?p=7111" />
+<meta property="og:description" content="The British have a phrase &quot;Too clever by half&quot;, It needs to go global, especially among hackers. It can have any of several closely related meanings: the one I mean to focus on here has to do with ..." />
+<meta property="article:published_time" content="2016-04-07T17:07:19+00:00" />
+<meta property="article:modified_time" content="2016-04-08T10:16:45+00:00" />
+<meta property="article:author" content="http://esr.ibiblio.org/?author=2" />
+<meta property="og:site_name" content="Armed and Dangerous" />
+<meta property="og:image" content="https://imgs.xkcd.com/comics/success.png" />
+<meta name="twitter:site" content="@jetpack" />
+<meta name="twitter:image" content="https://imgs.xkcd.com/comics/success.png?w=240" />
+<meta name="twitter:card" content="summary" />
+</head>
+
+<body class="single single-post postid-7111 single-format-standard two-column right-sidebar">
+	<div id="head-wrapper">
+				<header id="branding" role="banner">
+			<div id="header-group" class="clearfix">
+				<div id="header-logo">
+										<hgroup>
+						<h1 id="site-title"><span><a href="http://esr.ibiblio.org/" title="Armed and Dangerous" rel="home">Armed and Dangerous</a></span></h1>
+						<h2 id="site-description">Sex, software, politics, and firearms. Life&#039;s simple pleasures&#8230;</h2>
+					</hgroup>
+					
+	<div class="admired-social">
+
+		<ul class="admired-social">
+
+			<li><a target="_blank" href="http://plus.google.com/108967323530519754654" id="admired-plus" title="Google Plus"></a></li><li><a target="_blank" href="http://twitter.com/esrtweet" id="admired-twitter" title="Twitter"></a></li><li><a target="_blank" href="http://esr.ibiblio.org/?feed=rss" id="admired-rss" title="RSS"></a></li>		</ul>
+	</div><!-- .admired-social -->				</div>
+			</div>
+		</header><!-- #branding -->
+	</div><!-- #head-wrapper -->
+<div id="page" class="hfeed">
+		<div id="nav-bottom-menu">
+		<div id="nav-bottom-wrap">
+			<nav id="nav-menu2" role="navigation">
+				<h3 class="assistive-text">Main menu</h3>
+								<div class="skip-link"><a class="assistive-text" href="#content" title="Skip to primary content">Skip to primary content</a></div>
+				<div class="skip-link"><a class="assistive-text" href="#secondary" title="Skip to secondary content">Skip to secondary content</a></div>
+								<div class="menu"><ul class="sf-menu"><li ><a href="http://esr.ibiblio.org/">Home</a></li></ul></div>
+							<form method="get" id="searchform" action="http://esr.ibiblio.org/">
+		<label for="s" class="assistive-text">Search</label>
+		<input type="text" class="field" name="s" id="s" placeholder="Search" />
+		<input type="submit" class="submit" name="submit" id="searchsubmit" value="Search" />
+	</form>
+			</nav><!-- #nav-menu2 -->
+		</div>
+	</div>	<div id="main">
+		<div id="primary">
+			<div id="content" role="main">
+
+				
+					
+<article id="post-7111" class="post-7111 post type-post status-publish format-standard hentry category-technology category-software category-hacker-culture">
+	<nav id="nav-single">
+		<h3 class="assistive-text">Post navigation</h3>
+		<span class="nav-previous"><a href="http://esr.ibiblio.org/?p=7095" rel="prev"><span class="meta-nav">&larr;</span> Previous</a></span>
+		<span class="nav-next"><a href="http://esr.ibiblio.org/?p=7123" rel="next">Next <span class="meta-nav">&rarr;</span></a></span>
+	</nav><!-- #nav-single -->
+	<header class="entry-header">
+		<h1 class="entry-title">Too clever by half</h1>
+
+				<div class="entry-meta">
+			<span class="sep">Posted on </span><a href="http://esr.ibiblio.org/?p=7111" title="13:07:19" rel="bookmark"><time class="entry-date" datetime="2016-04-07T13:07:19+00:00" pubdate>2016-04-07</time></a><span class="by-author"> <span class="sep"> by </span> <span class="author vcard"><a class="url fn n" href="http://esr.ibiblio.org/?author=2" title="View all posts by Eric Raymond" rel="author">Eric Raymond</a></span></span>		</div><!-- .entry-meta -->
+			</header><!-- .entry-header -->
+
+	<div class="entry-content">
+		<div class="wp_plus_one_button" style="margin: 0 8px 8px 0; float:left; "><g:plusone href="http://esr.ibiblio.org/?p=7111" callback="wp_plus_one_handler"></g:plusone></div><p>The British have a phrase &#8220;Too clever by half&#8221;,  It needs to go global, especially among hackers. It can have any of several closely related meanings: the one I mean to focus on here has to do with overconfidence in one&#8217;s intelligence or skill, and the particular bad consequences that can have.  It&#8217;s related to Nassim Taleb&#8217;s concept of a &#8220;fragilista&#8221;.</p>
+<p><span id="more-7111"></span></p>
+<p>This came up recently when I posted about building a new mailserver out of a packaged fanless mini-ITX system.  My stated goal was to reduce my mailserver&#8217;s power dissipation in order to (eventually) collect a net savings on my utility bill.</p>
+<p>Certain of my commenters immediately crapped all over this idea, describing it as overkill and insisting that I ought to be using something with even lower power draw; the popular suggestion was a Raspberry Pi.  It was when I objected to the absence of a battery-backed-up RTC (real-time clock) on the Pi that the real fun started.</p>
+<p>The pro-Pi people airily dismissed this objection.  One observed that you can get an RTC hat for the Pi.  Some others waxed sarcastic about the maintainer of GPSD and the NTPsec tech lead not trusting his own software; a GPS to supply time, or NTP to take time corrections over the net, should (they claim) be a perfectly adequate substitute for an RTC.</p>
+<p>And so they would be&#8230;under optimal conditions, with everything working perfectly, and a software bridge that hasn&#8217;t been written yet. Best case would be that your GPS hat has a solid satellite lock when you boot and sets the system clock within the first second.  Only, oops, GPSD as it is doesn&#8217;t actually have the capability to set the system clock directly.  It has to go through ntpd or chrony.</p>
+<p>So now you have to have a time service daemon installed, properly configured, and running for the timestamps on your system logs to look sane.  Well, unless your GPS doesn&#8217;t have sat lock.  Or you&#8217;re booting without a network connection for diagnostic or fault isolation reasons. Now your cleverness has gotten you nowhere; your machine could believe it&#8217;s near 0 in the Unix epoch (Midnight, January 1st 1970) for an arbitrary amount of time.  </p>
+<p>Why is this a problem?  One very mundane reason is that logfile analyzers don&#8217;t necessarily deal well with large jumps in the system clock, like the one that will happen when the system time finally gets set; if you have to troubleshoot boot-time behavior later.  Another is cron jobs firing inappropriately. Yet another is that the implementations for various network protocols can get confused by large time skew, even if they&#8217;re formally supposed to be able to handle it.</p>
+<p>And I left out the fact that outright setting the system clock isn&#8217;t normal behavior for an NTP daemon, either.  What it&#8217;s actually designed to do is collect <em>small</em> amounts of drift by speeding up or slowing down the clock until system time matches NTP time.  And why is it designed to do this? If you guessed &#8220;because too many applications get upset by jumping time&#8221; you get a prize.</p>
+<p>You can certainly <em>tell</em> an NTP daemon to set time rather than skewing the clock rate.  But you do have to tell it to do that.  This is a configuration knob that can be gotten wrong.</p>
+<p>Are we perhaps beginning to see the problem here?</p>
+<p>Engineering is tradeoffs.  When you optimize for one figure of merit (like low cost) you are likely to end up pessimizing another, like proliferating possible failure modes.  This is especially likely if an economy measure like leaving out an RTC requires interlocking compensations like having a GPS hat and configuring your time-service daemon exactly right.</p>
+<p>The &#8220;too clever by half&#8221; mindset often wants to optimize demonstrating its own cleverness.  This, of course, is something hackers are particularly prone to.  It can be a virtue of sorts when you&#8217;re doing exploratory design, but not when you&#8217;re engineering a production system.  I&#8217;m not the first person to point out that if you write code that&#8217;s as clever as you can manage, it&#8217;s probably too tricky for you to debug.</p>
+<p>A particularly dangerous form of too clever by half is when you assume that you are smart enough for your design to head off all failure modes.  This is the mindset Nassim Taleb calls &#8220;fragilista&#8221; &#8211; the overconfident planner who proliferates complexity and failure modes and gets blindsided when his fragile construct collides with messy reality.</p>
+<p>Now I need to introduce the concept of an <em>incident pit</em>.  This is a term invented by scuba divers. It describes a cascade that depends with a small thing going wrong.  You try to fix the small thing, but the fix has an unexpected effect that lands you in more trouble.  You try to fix <em>that</em> thing, don&#8217;t get it quite right, and are in bigger trouble.  Now you&#8217;re under stress and maybe not thinking clearly.  The next mistake is larger&#8230;  A few iterations of this can kill a diver.</p>
+<p>The term &#8220;incident pit&#8221; has been adopted by paramedics and others who have to make life-critical decisions.  A classic XKCD cartoon, &#8220;Success&#8221;, captures how this applies to hardware and software engineering: </p>
+<p><img src="https://imgs.xkcd.com/comics/success.png" alt="The XKCD cartoon "Success"." /></p>
+<p>Too clever by half lands you in incident pits.</p>
+<p>How do you avoid these?  By <em>designing to avoid failure modes</em>. This why &#8220;KISS&#8221; &#8211; Keep It Simple, Stupid&#8221; is an engineering maxim.  Buy the RTC to foreclose the failure modes of not having one.  Choose a small-form-factor system your buddy Phil the expert hardware troubleshooter is already using rather than novel hardware neither of you knows the ins and outs of.</p>
+<p>Don&#8217;t get cute.  Well, not unless your actual <em>objective</em> is to get cute &#8211; if I didn&#8217;t know that playfulness and deliberately pushing the envelope has its place I&#8217;d be a piss-poor hacker. But if you&#8217;re trying to bring up a production mailserver, or a production <em>anything</em>, cute is not the goal and you shouldn&#8217;t let your ego suck you into trying for the cleverest possible maneuver. That way lie XKCD&#8217;s sharks.</p>
+<div class="sharedaddy sd-block sd-social sd-gplus"><h3 class="sd-title">Google+</h3><div class="sd-content"><a href="https://plus.google.com/+EricRaymond"><img src="https://lh6.googleusercontent.com/-tY2Av1p7TWU/AAAAAAAAAAI/AAAAAAAABaE/80iMm0zkP_Y/photo.jpg?sz=40" alt="Eric Raymond" width="20" height="20" align="absmiddle" /> </a><a rel="author" href="https://plus.google.com/+EricRaymond" class="gplus-profile">Eric Raymond</a><span class="g-follow-wrapper"><span class="g-follow" data-href="https://plus.google.com/+EricRaymond" data-rel="author" data-height="15"></span></span></div></div>			</div><!-- .entry-content -->
+
+	<footer class="entry-meta" style="clear:both;">
+		This entry was posted in <a href="http://esr.ibiblio.org/?cat=9" rel="category">Technology</a>, <a href="http://esr.ibiblio.org/?cat=13" rel="category">Software</a>, <a href="http://esr.ibiblio.org/?cat=23" rel="category">Hacker Culture</a> by <a href="http://esr.ibiblio.org/?author=2">Eric Raymond</a>. Bookmark the <a href="http://esr.ibiblio.org/?p=7111" title="Permalink to Too clever by half" rel="bookmark">permalink</a>.		
+			</footer><!-- .entry-meta -->
+</article><!-- #post-7111 -->
+
+					
+	
+		<div id="comments">
+		<h2 id="comments-title">
+			69 thoughts on &ldquo;<span>Too clever by half</span>&rdquo;		</h2>
+
+		
+		<ol class="commentlist">
+				<li class="comment even thread-even depth-1" id="li-comment-1703553">
+		<article id="comment-1703553" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/28f83617f4503880c88d2ed36ea5b36b?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/28f83617f4503880c88d2ed36ea5b36b?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">PapayaSF</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703553"><time pubdate datetime="2016-04-07T13:30:09+00:00">2016-04-07 at 13:30:09</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Great term. Many of the issues facing the country today are incident pits. A century ago the government started regulating medicine. Numerous iterations later, we have the headed-for-bankruptcy monstrosities of Medicare, Medicaid, and Obamacare, and we still haven&#8217;t fixed the problems they were supposed to solve. Or higher education: Hey, let&#8217;s help kids go to college! Then college tuition goes up, loans go up, the government takes over the loan program, and now vast numbers of people are up to their eyeballs in debt they can&#8217;t repay. Or home mortgages. Or the drug war. Etc&#8230;.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703557">
+		<article id="comment-1703557" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/beb3111e5b8856052578551d6d033e25?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/beb3111e5b8856052578551d6d033e25?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">EMF</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703557"><time pubdate datetime="2016-04-07T13:37:36+00:00">2016-04-07 at 13:37:36</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Yeah, a real-time clock is very important, as long as it FREEZES when you pull the battery to replace it (put on a switch to freeze the RTC state in EEPROM and read it back). This is a lesson that Game Freak should have learned with Pokémon R/S/E.</p>
+<p>Unrelatedly, I keep reading RTC as RTG, which keeps confusing me.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703562">
+		<article id="comment-1703562" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/2f5660e75398aeb2c199729d65f54e16?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/2f5660e75398aeb2c199729d65f54e16?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://logictutorial.com' rel='external nofollow' class='url'>Russell Irvin Johnston</a></span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703562"><time pubdate datetime="2016-04-07T13:44:25+00:00">2016-04-07 at 13:44:25</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Civilization as a whole is in an incident pit. Got it.<br />
+(See &#8220;Genghis John&#8221;)</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703565">
+		<article id="comment-1703565" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/bc15444a580f1dbafbe4b355bfea8b24?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bc15444a580f1dbafbe4b355bfea8b24?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">tz</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703565"><time pubdate datetime="2016-04-07T13:52:33+00:00">2016-04-07 at 13:52:33</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>The Odroid series generally have RTC including the (no longer produced but available) Raspi clone the Odroid W &#8211; separate batteries for power (charge controller) and RTC backup.  I use it with a FLiR and raspi camera for my drone because it is very compact.<br />
+Adafruit and Sparkfun have I2C 3232 <a href="https://www.maximintegrated.com/en/products/digital/real-time-clocks/DS3232.html" rel="nofollow">https://www.maximintegrated.com/en/products/digital/real-time-clocks/DS3232.html</a> with tcxo so it is 2ppm (2 seconds per year IIRC) and can be trimmed to tweak the accuracy and have notes on how to add it to the Raspberry Pi<br />
+Another possibility might be a cellular modem &#8211; even in E911 only (unactivated) it should provide the current time.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703574">
+		<article id="comment-1703574" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/8a94d7d4e630b68c4d684a1b86a91acf?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/8a94d7d4e630b68c4d684a1b86a91acf?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Max E.</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703574"><time pubdate datetime="2016-04-07T14:17:15+00:00">2016-04-07 at 14:17:15</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>IMO the RasPi has other problems. I considered using mine for a mailserver as well, but at least the first generation had USB stability problems which would make it completely unacceptable unless you relied entirely on SD storage.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703584">
+		<article id="comment-1703584" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/e1a9bed3bf6ee54cf86f952c87059afc?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/e1a9bed3bf6ee54cf86f952c87059afc?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">PJ</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703584"><time pubdate datetime="2016-04-07T14:35:26+00:00">2016-04-07 at 14:35:26</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>@tz&#8217;s last comment actually leads me to another think:  Got a spare rootable cellphone around?  If it&#8217;s less than around 3 years old, it may make a fine server: wifi, USB (via OTG), onboard flash, maybe microSD, low power consumption, battery backup, realtime clock&#8230; throw on a cyanogenmod kernel and whatever userspace you want and there you go.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703586">
+		<article id="comment-1703586" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/a5beab256f93a6a49f39b9afc5fe35c1?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a5beab256f93a6a49f39b9afc5fe35c1?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://blog.systemsartisans.com' rel='external nofollow' class='url'>John D. Bell</a></span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703586"><time pubdate datetime="2016-04-07T14:45:52+00:00">2016-04-07 at 14:45:52</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>An all-too-true example:</p>
+<p>About 16 months ago, when <a href="http://blog.systemsartisans.com/?p=107#The_Actual_Load" rel="nofollow">I did the initial software load</a> on the Great Beast of Malvern, I had written a multi-hundred line long shell script of gazillions of &#8220;apt-get install <strong>&#8230;</strong>&#8221; lines.  Since I thought it wouldn&#8217;t throw any errors, I put <strong>-xe</strong> on the hash-bang invocation line.</p>
+<p><em>Something else broke.</em></p>
+<p>And instead of just removing those flags, I kept trying to hack the body of the script to &#8216;fix&#8217; the problems.  Lost 5 hours that way, and Eric almost didn&#8217;t get his system installed.</p>
+<p>&#8220;Too Clever By Half&#8221;, indeed!</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703587">
+		<article id="comment-1703587" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/f575f9e58841f1a090017077065e627b?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f575f9e58841f1a090017077065e627b?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Ransom</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703587"><time pubdate datetime="2016-04-07T14:47:37+00:00">2016-04-07 at 14:47:37</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>My fancy new mail server doesn&#8217;t need a clock, because it has a GPS hat and an NTP channel!<br />
+**strike that, reverse it:<br />
+My fancy new mail server doesn&#8217;t need a GPS hat or an NTP channel, because it has a built-in real-time clock!<br />
+Yes, that&#8217;s better.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703589">
+		<article id="comment-1703589" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/beb3111e5b8856052578551d6d033e25?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/beb3111e5b8856052578551d6d033e25?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">EMF</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703589"><time pubdate datetime="2016-04-07T15:01:32+00:00">2016-04-07 at 15:01:32</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>To be fair, if you just freeze the clock when you&#8217;re off, that fixes many of the issues with not having an RTC battery. (Put in the superblock a note stating the time, then every second or so change it, and when booting, read that first thing.)</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703596">
+		<article id="comment-1703596" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/9258bc838b494f745e860b8d35698b5e?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/9258bc838b494f745e860b8d35698b5e?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://www.bufferbloat.net' rel='external nofollow' class='url'>dave taht</a></span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703596"><time pubdate datetime="2016-04-07T15:21:37+00:00">2016-04-07 at 15:21:37</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>While I agree strongly with what you wrote above, it would still be my hope you&#8217;d have some fun playing with a raspberry pi. My &#8220;killer app&#8221; for it has been using it as a kodi server and home lighting controller (using some hacked up versions of these: <a href="https://mjg59.dreamwidth.org/40397.html" rel="nofollow">https://mjg59.dreamwidth.org/40397.html</a> ). Another app for it (for me) is merely having a test tool around for alternate architectures. And: 64 bit arm code, in particular, is in need of polish and porting to make full advantage of the new features in the architecture.  I keep meaning to have the time to try to hook up some blinkenlights, weather sensors, or other forms of relays to mine, and simply haven&#8217;t got around to it.</p>
+<p>Secondly, a lower power mail (or any home) server with an integral RTC, and ups, would be a nice piece of gear to have. Repurposing an android tablet for this does not quite cut it, and the current generation of hackerboards and cases are not quite a match, either.  Something that could withstand a few minutes of power outage, work up to 70C, have an RTC, and that integral UPS, would be an ideal box to have in parts of the world that have poor electric infrastructure.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703602">
+		<article id="comment-1703602" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/3a0504845c920c9d6cb0c55777ef6256?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/3a0504845c920c9d6cb0c55777ef6256?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Jeff Read</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703602"><time pubdate datetime="2016-04-07T15:38:58+00:00">2016-04-07 at 15:38:58</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Lack of an RTC alone wouldn&#8217;t even doom the Pi as a solution, since you can buy an RTC hat for it. But the faster I/O bandwidth, faster speed in general, and the fact that hardware and software integration on a mini PC platform are a known quantity supported by every major distro still make it a more attractive option.</p>
+<p>&#8220;Too clever by half&#8221; is a succinct summary of why I have major distrust for things like systemd.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703608">
+		<article id="comment-1703608" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/93d4a63138e0241cc28b18f717ae9116?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/93d4a63138e0241cc28b18f717ae9116?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Greg</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703608"><time pubdate datetime="2016-04-07T16:02:33+00:00">2016-04-07 at 16:02:33</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&gt;Secondly, a lower power mail (or any home) server with an integral RTC, and ups, would be a nice piece of gear to have. Repurposing an android tablet for this does not quite cut it, and the current generation of hackerboards and cases are not quite a match, either. Something that could withstand a few minutes of power outage, work up to 70C, have an RTC, and that integral UPS, would be an ideal box to have in parts of the world that have poor electric infrastructure.</p>
+<p>Like Cambridge, MA. Sorry bad joke. I once lived about a block away from Draper Labs, a short walk from the east side of the MIT campus, and our power was 3rd world quality. Apparently very old infrastructure.</p>
+<p>Repurpose an obsolete laptop, if a cheap smartphone isn&#8217;t good enough. What especially would you be inclined to use it for?</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703609">
+		<article id="comment-1703609" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/bdfbce84540cc2370086d9fd6a7b1a91?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bdfbce84540cc2370086d9fd6a7b1a91?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Lambert</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703609"><time pubdate datetime="2016-04-07T16:06:34+00:00">2016-04-07 at 16:06:34</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&gt;Something that could withstand a few minutes of power outage</p>
+<p>I doubt it takes more than a little skill with a soldering iron and some random 5v battery to run a pi for a few hours. (Current draw of pi &lt;2A, 7Ah lead-acid batteries can be found for $30)</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703611">
+		<article id="comment-1703611" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/93d4a63138e0241cc28b18f717ae9116?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/93d4a63138e0241cc28b18f717ae9116?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Greg</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703611"><time pubdate datetime="2016-04-07T16:07:33+00:00">2016-04-07 at 16:07:33</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&gt;My fancy new mail server doesn’t need a clock, because it has a GPS hat and an NTP channel!<br />
+**strike that, reverse it:<br />
+My fancy new mail server doesn’t need a GPS hat or an NTP channel, because it has a built-in real-time clock!<br />
+Yes, that’s better.</p>
+<p>Which has more and more complex dependencies? And which has more and more frequent failure modes? </p>
+<p>System reliability isn&#8217;t a social construct. ;)</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703612">
+		<article id="comment-1703612" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/bdfbce84540cc2370086d9fd6a7b1a91?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bdfbce84540cc2370086d9fd6a7b1a91?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Lambert</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703612"><time pubdate datetime="2016-04-07T16:08:06+00:00">2016-04-07 at 16:08:06</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>P.S. Yes, that solution is probably too clever by half.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703618">
+		<article id="comment-1703618" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/01b80d97954a0792c512752c97e0fc78?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/01b80d97954a0792c512752c97e0fc78?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">TomA</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703618"><time pubdate datetime="2016-04-07T16:18:10+00:00">2016-04-07 at 16:18:10</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Speaking as an engineer, the pragmatic form of the maxim is more precisely stated as &#8220;the simplest thing that works reliably is always best.&#8221; And the first corollary, &#8220;only add complexity under extreme duress.&#8221;</p>
+<p>Unfortunately, these principles are not taught in engineering schools and must be learned in the school of hard knocks. As such, in an ideal world, every engineer would apprentice in a blue collar occupation of related practice before being allowed anywhere near a design project. Sadly, that is not often the case, and the end result can be both expensive and deadly.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703619">
+		<article id="comment-1703619" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/59459304616380a439c2ca6079f8fd00?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/59459304616380a439c2ca6079f8fd00?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">idunham</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703619"><time pubdate datetime="2016-04-07T16:19:22+00:00">2016-04-07 at 16:19:22</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Yup, seen this sort of problem before.<br />
+(In my case, the use case that requires time is cron for an alarm clock, and the time setting problem was a bug in the init scripts that made each reboot cause a drift equal to the timezone offset&#8230;)</p>
+<p>First connections usually take a long time and are not reliable, so any sort of &#8220;get something from somewhere else&#8221;-based scheme for startup is a bad idea. (Yes, this applies to cell phone modems.)</p>
+<p>Additionally, having used USB stuff for about 10 years, I&#8217;ll note that it tends to be&#8230;less than completely reliable, even comparing flash drives to spinning rust that&#8217;s accessed much more frequently. Network ports connected via a single USB controller really doesn&#8217;t sound like a good idea.<br />
+And SD cards are slow.</p>
+<p>EMF&#8217;s proposal theretically sounds reasonable for an &#8220;always-on&#8221; computer like a mailserver would be, unless you have memory with a limited number of read-write cycles or power-based limits on how often you can write.<br />
+But SD cards have a limited number of read-write cycles.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703621">
+		<article id="comment-1703621" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/93d4a63138e0241cc28b18f717ae9116?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/93d4a63138e0241cc28b18f717ae9116?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Greg</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703621"><time pubdate datetime="2016-04-07T16:21:32+00:00">2016-04-07 at 16:21:32</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&gt;I doubt it takes more than a little skill with a soldering iron and some random 5v battery to run a pi for a few hours. (Current draw of pi &lt;2A, 7Ah lead-acid batteries can be found for $30)</p>
+<p>Battery banks with 5v input and output through USB plugs of some kind are a commodity now. Here&#039;s a small cheap one that you might want to add to your travel kit:</p>
+<p><a href="https://www.fasttech.com/product/1137904-miller-ml-102-universal-usb-smart-charger-version" rel="nofollow">https://www.fasttech.com/product/1137904-miller-ml-102-universal-usb-smart-charger-version</a></p>
+<p>A single decent 18650 lithium ion rechargeable will run you a few bucks, and is generally good for somewhere in the region of 10W*h.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703625">
+		<article id="comment-1703625" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/f50e39b7c573cf5fc4f6a9f1151481d5?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f50e39b7c573cf5fc4f6a9f1151481d5?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Jack</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703625"><time pubdate datetime="2016-04-07T16:25:34+00:00">2016-04-07 at 16:25:34</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Lol indeed. You don&#8217;t seriously think that you&#8217;re the first one dealing with rtc-less systems in production? The problem you&#8217;ve described is already solved by systemd: upon boot it sets the clock to the time when the particular version was released. The leaves you with couple of years off time worst case instead of 45+. The rest you&#8217;ve described &#8211; systemd-timesyncd will compensate for that with proper skew and systemd&#8217;s timer units will fire properly instead of cron jobs.</p>
+<p>Welcome to 21 century, old-timer :)</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-esr bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-1703631">
+		<article id="comment-1703631" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/131a55e547345f3123af2c4ddd49e6a6?s=39&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/131a55e547345f3123af2c4ddd49e6a6?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn"><a href='http://www.catb.org/~esr/' rel='external nofollow' class='url'>esr</a></span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703631"><time pubdate datetime="2016-04-07T16:36:13+00:00">2016-04-07 at 16:36:13</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>>The problem you’ve described is already solved by systemd</p>
+<p>You lost me when you said &#8220;systemd&#8221;.  Someone else in the thread has aptly described it as &#8220;too clever by half&#8221;.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703636">
+		<article id="comment-1703636" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/171f31bbde4e195c33898abb5eed2c22?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/171f31bbde4e195c33898abb5eed2c22?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Jorge Dujan</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703636"><time pubdate datetime="2016-04-07T16:54:10+00:00">2016-04-07 at 16:54:10</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>In embedding the XKCD strip, the mouseover text was lost. It reads: &#8220;40% of OpenBSD installs lead to shark attacks.  It&#8217;s their only standing security issue.&#8221;</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703649">
+		<article id="comment-1703649" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/bdfbce84540cc2370086d9fd6a7b1a91?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/bdfbce84540cc2370086d9fd6a7b1a91?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Lambert</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703649"><time pubdate datetime="2016-04-07T18:04:54+00:00">2016-04-07 at 18:04:54</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&gt; every engineer would apprentice in a blue collar occupation of related practice before being allowed anywhere near a design project.</p>
+<p>I wholeheartedly agree, to the extent of learning how to MIG weld.<br />
+On that note, do US (or anywhere outside the UK, for that matter) engineering degrees often allow students to spend a year (usually between 2nd and 3rd) doing an internship in industry then resume the course where they left?</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703650">
+		<article id="comment-1703650" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/c8c0e5b0754770c5e1f7419a0698ecff?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/c8c0e5b0754770c5e1f7419a0698ecff?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">guest</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703650"><time pubdate datetime="2016-04-07T18:05:45+00:00">2016-04-07 at 18:05:45</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&gt; Someone else in the thread has aptly described [systemd] as “too clever by half”.</p>
+<p>Indeed. Rather, you could avoid much of the damage simply by (1) not starting cron or similar daemons until _after_ the clock is set; and (2) fixing logging services so that they can minimally cope with an unset clock. But there could still be pervasive issues with e.g. file creation or modification times which would be pretty hairy to solve. The real issue AIUI is that the OS was simply not designed with an awareness of this possibility.  It could be worthwhile to try and change this, because the RTC (with its onboard battery) _is_ a potential point of failure in a system, and many stripped-down systems could sensibly omit it.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-esr bypostauthor odd alt thread-odd thread-alt depth-1" id="li-comment-1703658">
+		<article id="comment-1703658" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/131a55e547345f3123af2c4ddd49e6a6?s=39&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/131a55e547345f3123af2c4ddd49e6a6?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn"><a href='http://www.catb.org/~esr/' rel='external nofollow' class='url'>esr</a></span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703658"><time pubdate datetime="2016-04-07T18:35:16+00:00">2016-04-07 at 18:35:16</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>>The real issue AIUI is that the OS was simply not designed with an awareness of this possibility. It could be worthwhile to try and change this</p>
+<p>Now that I think about it, this might not be all that difficult to change.  One place to intervene would be in the bootloader.  Add logic such that if it sees a system time before its build date it <em>prompts</em> for correct time and sets the clock&#8230;</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703651">
+		<article id="comment-1703651" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/3a0504845c920c9d6cb0c55777ef6256?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/3a0504845c920c9d6cb0c55777ef6256?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Jeff Read</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703651"><time pubdate datetime="2016-04-07T18:16:55+00:00">2016-04-07 at 18:16:55</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><blockquote><p>I wholeheartedly agree, to the extent of learning how to MIG weld.<br />
+On that note, do US (or anywhere outside the UK, for that matter) engineering degrees often allow students to spend a year (usually between 2nd and 3rd) doing an internship in industry then resume the course where they left?</p></blockquote>
+<p>Yes but skills like welding and machining don&#8217;t appear to be prerequisites. My father lamented the state of modern engineering students when he mentored a few from UConn. He said they&#8217;re damn smart but they don&#8217;t know how to do the basics of machining and that exacts a cost on the job because then the designers don&#8217;t know what the people on the shop floor are doing.</p>
+<p>Of course with the shop floor increasingly dominated by NC mills, laser cutters, 3D printers, and the like, maybe that won&#8217;t mean so much going forward.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703652">
+		<article id="comment-1703652" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/a5beab256f93a6a49f39b9afc5fe35c1?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a5beab256f93a6a49f39b9afc5fe35c1?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://blog.systemsartisans.com' rel='external nofollow' class='url'>John D. Bell</a></span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703652"><time pubdate datetime="2016-04-07T18:19:14+00:00">2016-04-07 at 18:19:14</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>@Lambert &#8211;</p>
+<p>At <a href="utoledo.edu" rel="nofollow">my school</a>, it is <em>required</em> that engineering students do a co-op in &#8220;real&#8221; industry.  Don&#8217;t know how effective it is in training practical sense into them.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703662">
+		<article id="comment-1703662" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/ed2282b9cf41911305f37dd2b17ffd60?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ed2282b9cf41911305f37dd2b17ffd60?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Michael</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703662"><time pubdate datetime="2016-04-07T18:52:34+00:00">2016-04-07 at 18:52:34</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>@esr &#8220;Add logic such that if it sees a system time before its build date it prompts for correct time and sets the clock…&#8221;</p>
+<p>This is a no-go for many use cases. A server shouldn&#8217;t require manual intervention just to boot up.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703669">
+		<article id="comment-1703669" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/01b80d97954a0792c512752c97e0fc78?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/01b80d97954a0792c512752c97e0fc78?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">TomA</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703669"><time pubdate datetime="2016-04-07T19:12:20+00:00">2016-04-07 at 19:12:20</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>@ Lambert &#8211; &#8220;On that note, do US engineering degrees often allow students to spend a year doing an internship in industry then resume the course where they left?&#8221;</p>
+<p>Summer internships are relatively common (especially between junior and senior year). Many industries use this technique to evaluate and recruit top talent. I spent mine working for a Kodak x-ray film manufacturing plant in Colorado.</p>
+<p>An others have commented, a hands-on apprenticeship that culminates in the acquisition of a basic occupational skill is ideal. This builds real-world common sense and a respect for the guys that actually run these plants from the bottom up. Ivory-tower engineers that miss out on this type of experience tend to produce designs that are clever in theory and unworkable in practice. I&#8217;ve seen $100+ million projects fail abysmally because of this. And it seems to be getting worse.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703677">
+		<article id="comment-1703677" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/3a1f68638c765096502abb3e56274386?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/3a1f68638c765096502abb3e56274386?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Random832</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703677"><time pubdate datetime="2016-04-07T19:38:32+00:00">2016-04-07 at 19:38:32</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&gt; Why is this a problem? One very mundane reason is that logfile analyzers don’t necessarily deal well with large jumps in the system clock, like the one that will happen when the system time finally gets set; </p>
+<p>Maybe timestamps aren&#8217;t the best format for a log file.</p>
+<p>No, hear me out.</p>
+<p>If you stored something like a unique value representing the boot time followed by a linear count of seconds since that time, you could retroactively establish the real time for those entries after you&#8217;ve figured out what time it is.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703686">
+		<article id="comment-1703686" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/63a571f458dde37c4148eaa9b70e9ed7?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/63a571f458dde37c4148eaa9b70e9ed7?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://di2.nu/' rel='external nofollow' class='url'>FrancisT</a></span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703686"><time pubdate datetime="2016-04-07T20:14:25+00:00">2016-04-07 at 20:14:25</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>As one of the Pi fan boys referenced, I should like to point out that I was not being entirely serious &#8211; sadly tone of voice doesn&#8217;t come across well in internet posts. </p>
+<p>[Though I do think you are being slightly too dismissive of the Pi. Even if you have a slight point when it comes to running a mail server on one]</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703694">
+		<article id="comment-1703694" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/70564a47fec89504b505a9b824c71183?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/70564a47fec89504b505a9b824c71183?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Geoffrey Tobin</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703694"><time pubdate datetime="2016-04-07T20:43:37+00:00">2016-04-07 at 20:43:37</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>The root cause of the financial crisis in the education sector is ballooning bureaucracy: backroom parasites who quarantine all income in their bottomless pockets while berating the teachers and researchers for not returning higher &#8220;productivity dividends&#8221; to them on zero investment.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703699">
+		<article id="comment-1703699" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/171f31bbde4e195c33898abb5eed2c22?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/171f31bbde4e195c33898abb5eed2c22?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Jorge Dujan</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703699"><time pubdate datetime="2016-04-07T21:00:32+00:00">2016-04-07 at 21:00:32</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>@ FrancisT</p>
+<p>&gt; sadly tone of voice doesn’t come across well in internet posts.</p>
+<p>Exactly. I often fear that my remarks and questions on this blog may be misinterpreted as arrogant or snide, and strive to prevent that by including &#8220;With all due respect&#8230;&#8221;, &#8220;No offense, but&#8230;&#8221;, etc. If we were communicating orally, I&#8217;d convey respect through voice tone instead.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-esr bypostauthor even thread-even depth-1" id="li-comment-1703726">
+		<article id="comment-1703726" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/131a55e547345f3123af2c4ddd49e6a6?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/131a55e547345f3123af2c4ddd49e6a6?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://www.catb.org/~esr/' rel='external nofollow' class='url'>esr</a></span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703726"><time pubdate datetime="2016-04-07T22:44:54+00:00">2016-04-07 at 22:44:54</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>OK.  This is funny. On my doorstep today there arrived a CanaKit Raspberry Pi 3 32GB Ultimate starter kit.  RaspPi, power supply, GPIO breakout board, case, breadboard, patch cables, and a buncha resistors and LEDs and diodes.  With, even, adorable little stick-on heatsinks. Basically a Pi project lab in a box.</p>
+<p>I don&#8217;t know who sent it.  Clearly somebody wants me to learn Pi hacking.</p>
+<p>EDIT: Turns out it was Dave Taht.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703749">
+		<article id="comment-1703749" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/3a0504845c920c9d6cb0c55777ef6256?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/3a0504845c920c9d6cb0c55777ef6256?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Jeff Read</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703749"><time pubdate datetime="2016-04-08T00:20:08+00:00">2016-04-08 at 00:20:08</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><blockquote><p>Add logic such that if it sees a system time before its build date it prompts for correct time and sets the clock…</p></blockquote>
+<p>Current date is Tue 1-01-1980<br />
+Enter new date (mm-dd-yy): _</p>
+<p>In all seriousness, putting this logic in the <i>bootloader</i> won&#8217;t help much unless said bootloader has a way to pass the date/time info to the OS. The system clock is generally implemented as a programmable interval timer and an ISR in the OS which, <i>inter alia</i>, updates the OS&#8217;s notion of what time it is. Without an RTC, <i>that&#8217;s all you get</i>, so any notion of wall-clock time is held and maintained <i>locally to the OS</i>.</p>
+<blockquote><p>I don’t know who sent it. Clearly somebody wants me to learn Pi hacking.</p></blockquote>
+<p>Yes &#8212; by all means please do. The Pi may not be a fit for your mail server project, but I&#8217;ll be damned if it isn&#8217;t a nifty machine to hack on. To work on the machine itself, you will have to check your fancy desktop environments and IDEs at the door &#8212; shit gets mad slow even on the considerably beefier Pi 2 &#8212; and hack the old-school way, with editors and command line tools. But I don&#8217;t think that&#8217;ll be a problem for <i>you</i>.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-esr bypostauthor even thread-even depth-1" id="li-comment-1703753">
+		<article id="comment-1703753" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/131a55e547345f3123af2c4ddd49e6a6?s=39&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/131a55e547345f3123af2c4ddd49e6a6?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn"><a href='http://www.catb.org/~esr/' rel='external nofollow' class='url'>esr</a></span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703753"><time pubdate datetime="2016-04-08T00:26:50+00:00">2016-04-08 at 00:26:50</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>>But I don’t think that’ll be a problem for <em>you</em>.</p>
+<p>No. No, it won&#8217;t be.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703752">
+		<article id="comment-1703752" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/432b7e40ae1fef7a9e300a9725603a01?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/432b7e40ae1fef7a9e300a9725603a01?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Zygo</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703752"><time pubdate datetime="2016-04-08T00:24:13+00:00">2016-04-08 at 00:24:13</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I built a medium-sized clock (6 feet by 8 feet) using LEDs that project onto my kitchen wall, controlled from a Raspberry Pi.  I priced an RTC clock at $17 (plus some integration effort) and a WiFi USB adapter at $11, so I picked the NTP solution.</p>
+<p>You describe a number of problems that arise from trying to maintain assorted bits of Unix legacy practice.  It&#8217;s a $25 headless network server, so there&#8217;s no need for a network-less diagnostic mode, in fact it doesn&#8217;t need to work at all without a network connection.  If you get any trouble, just swap out the entire device (or more often just the SD card) with a freshly configured replacement, and do fault analysis on the old one offline.</p>
+<p>Alas, the reason why Raspberry Pis make terrible mail servers is the SD cards.  They tend to have short lives, and all the data on them goes away at once when they fail.  That problem pretty much kills the whole idea of a mail server in practice.</p>
+<p>Raspbian comes with a package &#8216;fake-hwclock&#8217; preinstalled, which basically records the time in a file, and sets the clock to a few seconds after the time recorded in the file on next boot.  That means the time will be off by roughly the length of the downtime.  Still wrong, of course, but all the speculation here does seem to be wildly misinformed about how specifically wrong it&#8217;ll be if you just take one of the devices out of the box and plug it in.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703755">
+		<article id="comment-1703755" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/432b7e40ae1fef7a9e300a9725603a01?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/432b7e40ae1fef7a9e300a9725603a01?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Zygo</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703755"><time pubdate datetime="2016-04-08T00:29:50+00:00">2016-04-08 at 00:29:50</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&gt; A single decent 18650 lithium ion rechargeable will run you a few bucks, and is generally good for somewhere in the region of 10W*h.</p>
+<p>An ordinary 15Ah USB charger pack that you can buy at a drugstore can run a Raspberry Pi for 22 hours&#8230;longer, if you are not also using the same battery pack to power 3W of wearable LEDs.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703773">
+		<article id="comment-1703773" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/9258bc838b494f745e860b8d35698b5e?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/9258bc838b494f745e860b8d35698b5e?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://www.bufferbloat.net' rel='external nofollow' class='url'>dave taht</a></span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703773"><time pubdate datetime="2016-04-08T02:06:26+00:00">2016-04-08 at 02:06:26</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>The pi3 runs emacs *just fine*.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703787">
+		<article id="comment-1703787" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/f9633c08d9a20256e8bd134b6ede4aac?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f9633c08d9a20256e8bd134b6ede4aac?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://dividuals.wordpress.com' rel='external nofollow' class='url'>TheDividualist</a></span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703787"><time pubdate datetime="2016-04-08T03:17:23+00:00">2016-04-08 at 03:17:23</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>@ESR</p>
+<p>I remember vaguely you addressed this in The Jargon File as well and Yudkowsky discussed this too but I don&#8217;t have the links at hand. Anyway, the important thing is to focus on the psychological mechanism for it.</p>
+<p>It is a subset of the mechanism I call &#8220;status wireheading&#8221;. Everybody likes to be respected and have a good reputation. Smart people tend to do it through doing smart things and getting a reputation of being a smart problem-solver. The &#8220;wireheading&#8221; aspect is that is this gets quickly short-cut in the brain: you just do smart things and feel good about yourself, even if nobody knows about it and thus nobody gives you points for this. (This is why the worst cases of this are called intellectual masturbation: masturbation is a similar shortcut between action and brain-reward.) (There is a related and far more dangerous version of it: doing it with moral goodness, not cleverness, but &#8220;moral masturbation&#8221; does not belong to a tech discussion, so I am just mentioning it  for completeness.)</p>
+<p>This can easily get in the way of solving problems actually right. Therefore, it is often better to resist it. How to resist it is a difficult question, I guess being aware of and catching yourself when you do it it is step 1. Then it is good to mock it when others do it &#8211; depending on the situation it is the light, friendly mocking like you do now or in other cases it can be sharper. On the social level, incentives should be structured so that people get actual rewards like money and jobs not out of signalling smartness but actually solving problems. This is not just a public vs. private thing, it happens in some private jobs, too, a friend of mine works in a corporate research center and apparently it is not really possible there to get cred for actually solving problems and making products, don&#8217;t know why exactly but that smells like a bankruptcy coming, anyway, so they tend to sign their emails with their academic ranks and whatnot&#8230; and that&#8217;s not good.  The point is when external incentives change, &#8220;wireheading&#8221;, the shortcut tends to follow it. Smart people aren&#8217;t stupid, they tend to masturbate with things that are actually pretty similar to the kind of things that actually get them cred and money and other goodies, so if you pay and praise people to jump high they are going to shortcut it at some point and just enjoy jumping and get a self-esteem boost out of doing it  well.  Finally I would recommend something like the Bene Gesserit Litany Against Fear. &#8220;Too-cleverness is the good-solution-killer&#8230;&#8221; just formulate it better than I can.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703826">
+		<article id="comment-1703826" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/8afd542f10d6c009d409c94c4c3d2564?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/8afd542f10d6c009d409c94c4c3d2564?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">John</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703826"><time pubdate datetime="2016-04-08T05:27:18+00:00">2016-04-08 at 05:27:18</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Too clever by half is not a good figure of speech. Sure, if someone really is too clever for their own good, that should be communicated to them succinctly. But when you actually hear that figure of speech, it&#8217;s usually from someone who thinks themselves more clever or experienced and is annoyed that you brought up a better solution which would require leaving their comfort zone. It&#8217;s just resistance to change. &#8220;This works and is good enough&#8221; is an excellent way of getting inferior solutions. It&#8217;s how banks got stuck with mainframes running Cobol code that nobody can touch without breaking something.</p>
+<p>I have ARM systems that have been running without problems for years, with much more demanding loads than a mere mail server. They&#8217;re headless systems by design, which means I couldn&#8217;t attach a local console to set up or troubleshoot if I wanted to. Maybe that&#8217;s not your kind of thing, but there are ARM systems with HDMI and RTC which are still far cheaper and use less power than the anemic x86 system that you got. There are also far more powerful x86 systems with passive cooling and lower power consumption which are still less costly than the one you got, even if you insist on two wired network interfaces. Just because your buddy got the old crappy one and knows how to troubleshoot it should not make you shy away from a different system. Those are still just PCs.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703878">
+		<article id="comment-1703878" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/93d4a63138e0241cc28b18f717ae9116?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/93d4a63138e0241cc28b18f717ae9116?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Greg</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703878"><time pubdate datetime="2016-04-08T08:16:08+00:00">2016-04-08 at 08:16:08</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&gt;Maybe that’s not your kind of thing, but there are ARM systems with HDMI and RTC which are still far cheaper and use less power than the anemic x86 system that you got. There are also far more powerful x86 systems with passive cooling and lower power consumption which are still less costly than the one you got, even if you insist on two wired network interfaces.</p>
+<p>Examples please.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703884">
+		<article id="comment-1703884" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/878757a75e28b88e3a61913a2622e07c?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/878757a75e28b88e3a61913a2622e07c?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Alex K.</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703884"><time pubdate datetime="2016-04-08T08:36:17+00:00">2016-04-08 at 08:36:17</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>@TheDividualist [emphasis mine]:</p>
+<blockquote><p>It is a subset of the mechanism I call “status wireheading”. Everybody likes to be respected and have a good reputation. Smart people tend to do it through doing smart things and getting a reputation of being a smart problem-solver. &#8230;</p>
+<p>This can easily get in the way of solving problems actually right. Therefore, it is often better to resist it. How to resist it is a difficult question, <b>I guess being aware of and catching yourself when you do it it is step 1.</b></p></blockquote>
+<p>I&#8217;m not saying you&#8217;re wrong here&#8211;but the idea that we can tell in advance when we are &#8220;wireheading&#8221; and when we are functional feels, to me, as &#8220;being too clever&#8221;. The idea as I&#8217;ve heard expressed elsewhere was &#8220;Were P=NP to be true, then understanding a solution would be the same as finding it&#8211;anyone who could appreciate a symphony would be a Mozart&#8221;. Here, I feel as if you&#8217;ve taken hold of that same dichotomy of understanding v. solving, but are ignoring the complexity gulf between them. For a great many problems, the only means we may ever have to differentiate between actual workable solutions or clever-but-inoperable ones is by experience (ie: implementing some of the bad ones).</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703904">
+		<article id="comment-1703904" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/93d4a63138e0241cc28b18f717ae9116?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/93d4a63138e0241cc28b18f717ae9116?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Greg</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703904"><time pubdate datetime="2016-04-08T09:58:24+00:00">2016-04-08 at 09:58:24</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&gt;I’m not saying you’re wrong here–but the idea that we can tell in advance when we are “wireheading” and when we are functional feels, to me, as “being too clever”. </p>
+<p>It doesn&#8217;t sound so much like a prescriptive solution, as another anecdotal case of a little bit of self-awareness going a long way.</p>
+<p>Damn self-awareness privilege.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703906">
+		<article id="comment-1703906" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/3a0504845c920c9d6cb0c55777ef6256?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/3a0504845c920c9d6cb0c55777ef6256?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Jeff Read</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703906"><time pubdate datetime="2016-04-08T10:01:35+00:00">2016-04-08 at 10:01:35</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><blockquote><p>It’s how banks got stuck with mainframes running Cobol code that nobody can touch without breaking something.</p></blockquote>
+<p>Hey, COBOL is pert-near an ideal language in its solution space. Hackers may look down their noses at it and make jokes about the object-oriented variant being called ADD 1 TO COBOL GIVING COBOL, but hackers can be ignorant, arrogant dicks sometimes too.</p>
+<p>And mainframes? Mainframes have I/O bandwidth out the wazoo &#8212; which it turns out is the real bottleneck in mainframe style applications. Back in the day they weren&#8217;t just good enough &#8212; nothing else could touch them when you needed data throughput to service hundreds or thousands of users. And IBM has provided an upgrade path since System/360 that maintains perfect backward compatibility, allowing those old applications to run bit-identical on modern hardware alongside Linux web server instances.</p>
+<p>There&#8217;s a reason why mainframes are said to &#8220;run Western civilization&#8221;.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703908">
+		<article id="comment-1703908" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/31260617ed764313bac01797b0e293e8?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/31260617ed764313bac01797b0e293e8?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Sean C.</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703908"><time pubdate datetime="2016-04-08T10:13:38+00:00">2016-04-08 at 10:13:38</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>ESR mentioned SCUBA diving as a community intensely aware of incident pits.  Rodale&#8217;s magazine has a column about SCUBA fatalities that makes for fascinating reading on the topic.  Short concise articles about how small mistakes lead to tragedy.</p>
+<p><a href="http://www.scubadiving.com/tags/lessons-for-life" rel="nofollow">http://www.scubadiving.com/tags/lessons-for-life</a></p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703921">
+		<article id="comment-1703921" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/66d13c2c9dcf607236211e5f78b323b9?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/66d13c2c9dcf607236211e5f78b323b9?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Mike E</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703921"><time pubdate datetime="2016-04-08T10:59:16+00:00">2016-04-08 at 10:59:16</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>As far as Pi I/O goes: SD cards with standard Linux filesystems are problematic for any kind of heavy (or really, moderate) I/O for multiple reasons.  A boot loader or minimal root filesystem, and the rest on a USB external drive is probably the thing for use cases where you care. </p>
+<p>And, yeah, it&#8217;s a &#8220;toy&#8221;&#8230; but it&#8217;s a quad-core gigahertz CPU with 1024 MB of RAM and 100Mb/s ethernet.  Not that many years ago that was serious business!</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703951">
+		<article id="comment-1703951" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/e49abfb7cda7c2e4a99b5b8db5512c4e?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/e49abfb7cda7c2e4a99b5b8db5512c4e?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://blog.peterdonis.com' rel='external nofollow' class='url'>Peter Donis</a></span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703951"><time pubdate datetime="2016-04-08T12:48:39+00:00">2016-04-08 at 12:48:39</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>@Jack: <i>The problem you’ve described is already solved by systemd: upon boot it sets the clock to the time when the particular version was released.</i></p>
+<p>This is an extremely&#8230;interesting&#8230;usage of the word &#8220;solved&#8221;.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703959">
+		<article id="comment-1703959" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/878757a75e28b88e3a61913a2622e07c?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/878757a75e28b88e3a61913a2622e07c?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Alex K.</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703959"><time pubdate datetime="2016-04-08T13:01:48+00:00">2016-04-08 at 13:01:48</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>@Greg:</p>
+<blockquote><p>It doesn’t sound so much like a prescriptive solution, as another anecdotal case of a little bit of self-awareness going a long way.</p></blockquote>
+<p>That&#8217;s exactly why I phrased my response as &#8220;not saying you&#8217;re wrong&#8221;. Self-awareness and precaution are critical with any untested idea&#8211;to that extent I agree 100% with TheDividualist. However, to the extent his phrasing suggests there is a &#8220;general case&#8221; system to sort out in advance <i>all</i> ideas which belong in the circular filing drawer&#8211;well, that concept &#8220;feels like&#8221; proving that P=NP to me.</p>
+<p>Sometimes people sneer at perfectly serviceable ideas (see Jeff Read&#8217;s comment re: COBOL) and sometimes we fall in love with terrible ones (insert &lang;hated political ideology&rang; here). Sure, some ideas are obviously doomed to failure&#8211;you&#8217;ll never fly to the moon by jumping&#8211;but the only ways I know of to sort out which ones actually work is either direct experience (ie: &#8220;try it and see&#8221;) or learning from the people who already have.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703963">
+		<article id="comment-1703963" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/9258bc838b494f745e860b8d35698b5e?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/9258bc838b494f745e860b8d35698b5e?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://www.bufferbloat.net' rel='external nofollow' class='url'>dave taht</a></span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703963"><time pubdate datetime="2016-04-08T13:22:24+00:00">2016-04-08 at 13:22:24</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>On of my main reasons for getting involved with the ietf (again) a few years ago was that far too many ideas were &#8220;too clever by half&#8221; and the former model of &#8220;running code and rough consensus&#8221; seemed to have evolved to &#8220;proto code and the consensus of the insane&#8221;. I kind of hope to have pushed the balance back a bit, but more folk stepping up to the task of keeping the internet saner for the billions using it, would be nice.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1703968">
+		<article id="comment-1703968" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/ea74426a82b2c4b9b7a13ef69ddb07d2?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/ea74426a82b2c4b9b7a13ef69ddb07d2?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://brucefwebster.com' rel='external nofollow' class='url'>bfwebster</a></span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703968"><time pubdate datetime="2016-04-08T13:44:58+00:00">2016-04-08 at 13:44:58</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Great post (and I&#8217;ve already reposted it). The older I get, and the more troubled/failed IT projects I review (both as a consultant and as an expert witness), the more I keep coming back to my favorite systems design maxim:</p>
+<blockquote><p>&#8220;In architecting a new [software] program, all the serious mistakes are made in the first day.&#8221; </p></blockquote>
+<p>&#8212; Robert J. Spinrad, lecture at USC, 1988, cited in <b>The Art of Systems Architecting</b> (3rd ed.), Maier &amp; Rechtin (CRC, 2009), p. 399.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1703983">
+		<article id="comment-1703983" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/89bd487cb4df4b9d9aa838ce6b2eb21b?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/89bd487cb4df4b9d9aa838ce6b2eb21b?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Lex Corvus</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1703983"><time pubdate datetime="2016-04-08T14:42:14+00:00">2016-04-08 at 14:42:14</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>In this context, iatrogenesis is a salient concept as well.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1704041">
+		<article id="comment-1704041" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/55f5d4f473f3836c95ac1084044fc45e?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/55f5d4f473f3836c95ac1084044fc45e?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Astro Jetson</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1704041"><time pubdate datetime="2016-04-08T18:11:31+00:00">2016-04-08 at 18:11:31</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I was one of the clever boys in the first go around in the mail server thread.   When power goes off the Pi&#8217;s and the rest of the house goes dark and the internet goes down.  When things power back up everything boots and at some point my Pi&#8217;s connect to an NTP service, figure out what time it is and things move on from there.  </p>
+<p>Since AstroEnterprises is smaller than the vast conglomerate that is A&amp;D that&#8217;s been good enough.   I use Pi&#8217;s like little blocks.  Need to run that as a service?  Pull a Pi out of the box, slap in in a case, power, config, put it on the shelf and forget about it.  </p>
+<p>I&#8217;m a hardware guy so using weird hardware isn&#8217;t hard for me.  And this is where Eric and I diverge.  He isn&#8217;t a hardware guy.  So his requirements list wasn&#8217;t a low powered PC to run a mail server on.  It&#8217;s 24 * 7 hardware support and after that a low powered PC to run a mail server. </p>
+<p>I suggested the PI, he countered with needing a RTC.  There are few $12 RTC boards that plug into the Pi.  They do require being plugged in and they need to be configured.  But I agree it falls into the realm of hardware.  </p>
+<p>On a whim I ordered the PiFace RTC from MCM (hardware guy, just added it to the next order of stuff from them) and it showed up today.    Its took me less time to config it than it did to write this post.  It works and when it boots there is still little log weirdness since Linux needs to query the time.  That happens in /etc/rc.local, so it&#8217;s well into the boot process.  But since my server startups happen after that, they will all start with the right time.  </p>
+<p>But that weirdness my not sit well.  It doesn&#8217;t bother me since all time sensitive stuff runs after I do the time set.  I&#8217;m guessing that it does bother Eric since he took the time to write another post about it.  </p>
+<p>To me the Pi is just a pull it off the shelf and use it chunk of hardware.  I&#8217;d stumble for a day trying to build an x86 board from parts.  </p>
+<p>Happy that you have hardware support and your new system will be up soon.</p>
+<p>Super happy that Dave gifted you with a Pi kit that you can play with.  </p>
+<p>If you want an RTC for it, drop me a note, MCM delivers worldwide, I put orders in ever week.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1704075">
+		<article id="comment-1704075" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/9a7fd6eb6de2efb87aea64a7969d3296?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/9a7fd6eb6de2efb87aea64a7969d3296?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">trying2b-amused</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1704075"><time pubdate datetime="2016-04-08T20:47:47+00:00">2016-04-08 at 20:47:47</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>A client of mine wanted a smaller physical box for an x86 Linux based firewall &#8211; which shall remain nameless since it&#8217;s probably considered irredeemably gauche in these circles, but it has been serving him (and me) very well for about 10 years now, so I stuck with what I knew &#8211; aside to Jeff Read: I went well out of my way to go non-Intel. Does that make any difference? Anyway, at first I thought of just getting the smallest PC I could find, but that was (with the necessary NICs) still pretty big. I found a (what turned out to be) very slick little headless box (apu1d4) small enough to make the client quite happy. The latest version (which I hadn&#8217;t ever used) of said firewall claimed to be installable on headless, but the procedure for doing so was, let&#8217;s say, less than sparkling clear. So, being a firm subscriber to the admonitions in ESR&#8217;s OP, I tried it on a burner PC I had lying around, going so far as to construct a jumper-configurable null-modem adapter first. To make a long story short, I finally got it to work, but the process was <em>much</em> easier without the pressure of &#8220;I&#8217;m going to look like a real chump if I have to tell the client all this hardware he just bought can&#8217;t be used.&#8221;</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1704094">
+		<article id="comment-1704094" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/b0e8f7429a6351d367e92a8fed85020e?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/b0e8f7429a6351d367e92a8fed85020e?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Garrett</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1704094"><time pubdate datetime="2016-04-08T22:02:23+00:00">2016-04-08 at 22:02:23</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>@esr &#8220;engineering a production system&#8221;</p>
+<p>What makes something &#8220;production&#8221;? In the past decade I&#8217;ve spent my time working for companies where the failure of a single component, including the motherboard, should not stop current workloads from being handled. Your use seems to imply anything where 9 5s of uptime is expected or better, maybe. That strikes me as a dorm-room definition production system.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment byuser comment-author-esr bypostauthor even thread-even depth-1" id="li-comment-1704144">
+		<article id="comment-1704144" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/131a55e547345f3123af2c4ddd49e6a6?s=39&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/131a55e547345f3123af2c4ddd49e6a6?s=78&amp;d=mm&amp;r=g 2x' class='avatar avatar-39 photo' height='39' width='39' /><span class="fn"><a href='http://www.catb.org/~esr/' rel='external nofollow' class='url'>esr</a></span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1704144"><time pubdate datetime="2016-04-09T01:29:21+00:00">2016-04-09 at 01:29:21</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>>That strikes me as a dorm-room definition production system.</p>
+<p>All engineering is tradeoffs.  You have much more stringent requirements for MTBF than I do, but that doesn&#8217;t make mine a &#8220;dorm-room&#8221; definition, just one fitted to a different economic context than yours.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="post pingback">
+		<p>Pingback: <a href='http://pukeko.net.nz/blog/2016/04/stupid-clever-quote-of-the-day/' rel='external nofollow' class='url'>Stupid clever [Quote of the day] | Dark Brightness</a></p>
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1704134">
+		<article id="comment-1704134" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/814b91f4ca4eb8242c5abe05dcc29058?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/814b91f4ca4eb8242c5abe05dcc29058?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Peter Scott</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1704134"><time pubdate datetime="2016-04-09T00:35:57+00:00">2016-04-09 at 00:35:57</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>In my experience, production means &#8220;I want it to work, I want it to <i>keep</i> working, and I don&#8217;t want it to wake me up at 3 AM when it stops working.&#8221; For some reason it&#8217;s always 3 AM when things stop working, regardless of your time zone.</p>
+<p>How you make this happen is a vast and exciting topic all its own, but one thing most of the approaches have in common is that you want to avoid doing things that are <i>obviously</i> going to cause weird, hard-to-reproduce problems. Personally, I would recommend never dealing with time in any way whatsoever, except perhaps recording causal ordering of events, Lamport-style. If you deal with time, you should always only record the number of seconds since God created the heavens and the earth on January 1, 1970. Time zones are evil, and leap seconds are right out.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1704304">
+		<article id="comment-1704304" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/4124ae7262e1d0493606c15ac1e19685?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4124ae7262e1d0493606c15ac1e19685?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Parallel</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1704304"><time pubdate datetime="2016-04-09T12:46:49+00:00">2016-04-09 at 12:46:49</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&#8220;Production&#8221; for Eric means reducing his total cost of ownership.  Eric&#8217;s most limiting resource is his time, followed by attention-grabbing concerns.</p>
+<p>The word &#8220;secure&#8221; comes from the Latin: literally &#8220;no care&#8221;.  The best idiomatic translation is the Jamaican &#8220;no worries, mon&#8221;.  As a state of mind, it&#8217;s unmeasurable and very personal.</p>
+<p>What can we can measure and reason about?  Resilience.  And not just in the availability domain; integrity and confidentiality too.  Each individual will weight those elements differently, particularly in the context of technical risks, budget and intent/goals for the implementation.  Eventually there has to be a decision to proceed, balancing the evidence of resiliency elements viewed through the prism of experience.</p>
+<p>For example: personally, I would weight the integrity provided by Amazon Web Services over anything I could provide at my personal home.  I&#8217;m also convinced they would do a better job of maintaining confidentiality on my behalf because they have hundreds of millions of revenue dollars per month at stake if their customers perceive a confidentiality failure.  And I know their data centers have far better more reliable power supplies than what I have at home.</p>
+<p>Does this make me right and Eric wrong?  Not at all.  We can look at the same evidences of resiliency and weight them differently.  For example, Eric explained he weights the possibility of forgetting to pay Amazon (an availability threat) enough to overwhelm the other threats to availability that using Amazon would mitigate.  He knows himself and his situation better than any of us, and I believe he knows enough about Amazon to make a good decision.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1704614">
+		<article id="comment-1704614" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/d1b26f7f5bf496afa58f8aa562d53a2e?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/d1b26f7f5bf496afa58f8aa562d53a2e?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Simon Jester Jr</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1704614"><time pubdate datetime="2016-04-10T11:54:12+00:00">2016-04-10 at 11:54:12</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>It&#8217;s nice to see this term get picked up by a broader community. I have been using it for the last 6 years in building integration architecture to wire together b2b systems in legacy verticals. Inevitably you run into 2 sorts sitting across the table from you: data modelers and nativists. </p>
+<p>Data modelers can&#8217;t comprehend why you want to pass simplistic json strings with 2 objects and a defined array instead of their perfect xml behemoth that represents, in essence, their entire persistence model. Why, they exclaim, that it is _you_ introducing complexity by over simplifying because (after all) they have built and tested their system over X years to support Y client and certainly that robustness counts for a lot more than passing strings around.</p>
+<p>Then there are the nativists: usually either sysAdmin types who have been finagled into writing code or corporate 4GL types who have read the white paper from Borg Central describing how easy it is to use the Z Library over SOAP to integrate systems, and how this supports decoupling and unity of purpose. What is lost is that the decoupling is still more coupled than is wise (integration is an art of coupling the right things and decoupling system-specific things) and the unity of purpose is the Borg Central&#8217;s biz plan, as opposed to, say, building an API that supports the actual integration case.</p>
+<p>Both of these types lead you to the inevitable exploration of the architectural foundations of their code base wherein they announce, after 3 months, that &#8220;our system was never designed to actually integrate with your system&#8221;. Ahem.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1704697">
+		<article id="comment-1704697" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://2.gravatar.com/avatar/5ffd0082617dfbafec16298cd183bc6b?s=68&#038;d=mm&#038;r=g' srcset='http://2.gravatar.com/avatar/5ffd0082617dfbafec16298cd183bc6b?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Terry</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1704697"><time pubdate datetime="2016-04-10T19:07:14+00:00">2016-04-10 at 19:07:14</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>:Yeah, a real-time clock is very important, as long as it FREEZES when you pull the battery to replace it (put on a switch to freeze the RTC state in EEPROM and read it back).&#8221;</p>
+<p>Meh.  Simpler and smarter is to gang it with a capacitor that&#8217;ll hold the fort for a few seconds. I learned this from a smoke detector that chirped its freaking annoying low battery alarm for ten minutes after the battery was pulled.  (Related pro tip: use only Duracell in smoke detectors, and if they are not available, use a no-name brand rather than Energizer; the Energizer 9-volt is hardly better than a turd.)  But that might not be necessary either, since the typical Li-MnO2 clock battery will often power the clock long after other parts of the system have died, such as the cooling fan.  But since we&#8217;ve eliminated the cooling fan&#8230;</p>
+<p>&#8220;Unrelatedly, I keep reading RTC as RTG, which keeps confusing me.&#8221;</p>
+<p>Well, if you had an RTG for an RTC, you&#8217;d never need to change it.  On the other hand, you&#8217;d probably need a cooling fan, lol!   You&#8217;d also need to fill out a ream of paperwork for the IAEA and a team of lawyers and physicists to help you with that, which&#8217;ll probably put ESR&#8217;s goal of &#8220;reduc[ing] my mailserver’s power dissipation in order to (eventually) collect a net savings on my utility bill.&#8221;  That&#8217;s a situation that fits the &#8220;too clever by half&#8221; description, CMIIR!</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1704814">
+		<article id="comment-1704814" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/f9633c08d9a20256e8bd134b6ede4aac?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/f9633c08d9a20256e8bd134b6ede4aac?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn"><a href='http://dividuals.wordpress.com' rel='external nofollow' class='url'>TheDividualist</a></span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1704814"><time pubdate datetime="2016-04-11T07:09:20+00:00">2016-04-11 at 07:09:20</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>@Alex K.</p>
+<p>&gt;I’m not saying you’re wrong here–but the idea that we can tell in advance when we are “wireheading” and when we are functional feels, to me, as “being too clever”. </p>
+<p>There is one method that often works &#8211; KISS principle, start with the simplest solution, then increasingly more complex ones if they fail, thus keeping  complexity to the minimum because complexity implies fragility. </p>
+<p>The problem with the method is that we can rarely solve modern tech problems with the application of a stone hatched (although sometimes one is really tempted&#8230;) so the defaults of what the minimal viable complexity depends on actual experience, so you are right there, but as a psychological mechanism knowing that we tend to like smart and fragile complexity and trying to hold those horses back is usually a good approach.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1704893">
+		<article id="comment-1704893" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/d1b26f7f5bf496afa58f8aa562d53a2e?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/d1b26f7f5bf496afa58f8aa562d53a2e?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Simon Jester Jr</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1704893"><time pubdate datetime="2016-04-11T15:25:03+00:00">2016-04-11 at 15:25:03</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&gt;&gt;There is one method that often works – KISS principle, start with the simplest solution, then increasingly more complex ones if they fail, thus keeping complexity to the minimum because complexity implies fragility.</p>
+<p>I have been using the YAGNI heuristic a lot lately to define the upper boundaries. &#8230; if it doesn&#8217;t directly relate to the problem _as defined_ it probably falls outside of the boundaries of what is &#8220;extra&#8221; to solving the problem. This works really well with software, especially where we can define the problem well. </p>
+<p>I think in hardware, future proofing the solution (buying extra disk space or a better processor or a &#8220;more comprehensive&#8221; power solution) is usually a wiser and ultimately cheaper expedient. Moore&#8217;s law, and 60 years of cheap energy, historically makes this a viable approach. But it&#8217;s interesting because a lot of forces are causing the pendulum to shift and YAGNI to begin to intrude on the hardware purchasing decision. </p>
+<p>ESR&#8217;s issue here is interesting because it defines a boundary line between hardware and software build / buy parsimony.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1704941">
+		<article id="comment-1704941" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/13a902b5c16e5b909b7b55ace06a64ba?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/13a902b5c16e5b909b7b55ace06a64ba?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Anonymous, or not</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1704941"><time pubdate datetime="2016-04-11T20:24:54+00:00">2016-04-11 at 20:24:54</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>If an educational ARM board is not to your taste, what about a 96boards.org compatible server?  One of those should have something suitable, one would think.  See:  <a href="http://www.96boards.org/" rel="nofollow">http://www.96boards.org/</a></p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1705010">
+		<article id="comment-1705010" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/40399a7f81b22be79f1ec58612e461b5?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/40399a7f81b22be79f1ec58612e461b5?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">LSWCHP</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1705010"><time pubdate datetime="2016-04-12T04:19:49+00:00">2016-04-12 at 04:19:49</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>I&#8217;ve spent most of my career writing software for miliitary systems where Lots  of People May Die if things don&#8217;t work properly. It makes ones engineering tend to the conserative side. I live by Knuth&#8217;s observation &#8211; &#8220;Premature optimisation is the root of all evil&#8221;.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1705763">
+		<article id="comment-1705763" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/666d23beb50544251806542895691f62?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/666d23beb50544251806542895691f62?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Ian Argent</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1705763"><time pubdate datetime="2016-04-14T17:40:21+00:00">2016-04-14 at 17:40:21</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><blockquote><p>In the past decade I’ve spent my time working for companies where the failure of a single component, including the motherboard, should not stop current workloads from being handled. Your use seems to imply anything where 9 5s of uptime is expected or better, maybe. That strikes me as a dorm-room definition production system.</p></blockquote>
+<p>Five Nines is 5 minutes of downtime a year. That may or may not stop a workload from being handled, depending on how much latency is allowed in your process.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1705765">
+		<article id="comment-1705765" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/666d23beb50544251806542895691f62?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/666d23beb50544251806542895691f62?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Ian Argent</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1705765"><time pubdate datetime="2016-04-14T17:47:21+00:00">2016-04-14 at 17:47:21</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Sort of a followup &#8211; the least replaceable resource is time. If you&#8217;re burning time messing around and it&#8217;s not for fun or profit, then you&#8217;re wasting that most precious resource. </p>
+<p>I&#8217;m currently in the process of repurposing a R-Pi I originally bought as a VPN server (but never used because I have a working solution, and getting the Pi working was both not-fun and taking time I wanted to use for other things). The new purpose? Being a game streamer to my TV. In one way, this is exactly as much a waste of time as trying to get it working as a VPN head &#8211; the same system that I currently use as my VPN head uses my TV as a monitor and has Steam installed on it. But, right now, the messing about is the &#8220;fun&#8221; part. If I can&#8217;t get it to work in a relatively rapid time, I&#8217;ll drop the project and move on.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1705767">
+		<article id="comment-1705767" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/4b7353799f6987dc80fc1fab80c7178c?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/4b7353799f6987dc80fc1fab80c7178c?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">The Monster</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1705767"><time pubdate datetime="2016-04-14T17:55:23+00:00">2016-04-14 at 17:55:23</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&gt;  For some reason it’s always 3 AM when things stop working, regardless of your time zone.</p>
+<p>I have gotten to the point that I just automatically wake up around 3 am and glance at the phone.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment even thread-even depth-1" id="li-comment-1706599">
+		<article id="comment-1706599" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://1.gravatar.com/avatar/a59fe1bc02c2dee45964f661d878c230?s=68&#038;d=mm&#038;r=g' srcset='http://1.gravatar.com/avatar/a59fe1bc02c2dee45964f661d878c230?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">nht</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1706599"><time pubdate datetime="2016-04-17T20:15:31+00:00">2016-04-17 at 20:15:31</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>&#8220;I’ve spent most of my career writing software for miliitary systems where Lots of People May Die if things don’t work properly. It makes ones engineering tend to the conserative side. I live by Knuth’s observation – “Premature optimisation is the root of all evil”.&#8221;</p>
+<p>I&#8217;ve spent the last 10 years writing/reviewing/etc software for military systems and have discovered in that process that rebooting the system every 24 hours is an acceptable work around for major weapon systems.</p>
+<p>I spent the previous few years writing software for a major telecommunications company (now mostly dead) with employees drawn from Nortel, Lucent, etc and am now pleasantly surprised to get a dial tone when I pick up the phone.  There were more WTF moments working in the &#8220;5 nines&#8221; industry than I thought possible.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+	<li class="comment odd alt thread-odd thread-alt depth-1" id="li-comment-1706816">
+		<article id="comment-1706816" class="comment">
+			<footer class="comment-meta">
+				<div class="comment-author vcard">
+					<img alt='' src='http://0.gravatar.com/avatar/666d23beb50544251806542895691f62?s=68&#038;d=mm&#038;r=g' srcset='http://0.gravatar.com/avatar/666d23beb50544251806542895691f62?s=136&amp;d=mm&amp;r=g 2x' class='avatar avatar-68 photo' height='68' width='68' /><span class="fn">Ian Argent</span> on <a href="http://esr.ibiblio.org/?p=7111#comment-1706816"><time pubdate datetime="2016-04-18T12:45:31+00:00">2016-04-18 at 12:45:31</time></a> <span class="says">said:</span>
+									</div><!-- .comment-author .vcard -->
+
+				
+			</footer>
+
+			<div class="comment-content"><p>Telecom, at least the company I work for, obtains &#8220;five nines or better&#8221; by brute force and massive overengineering and redundancy.</p>
+</div>
+
+			<div class="reply">
+							</div><!-- .reply -->
+		</article><!-- #comment-## -->
+
+	</li><!-- #comment-## -->
+		</ol>
+
+			</div><!-- #comments -->
+	
+					<div id="respond" class="comment-respond">
+			<h3 id="reply-title" class="comment-reply-title">Leave a Reply <small><a rel="nofollow" id="cancel-comment-reply-link" href="/?p=7111#respond" style="display:none;">Cancel reply</a></small></h3>				<form action="http://esr.ibiblio.org/wp-comments-post.php" method="post" id="commentform" class="comment-form">
+					<p class="comment-notes"><span id="email-notes">Your email address will not be published.</span> Required fields are marked <span class="required">*</span></p><p class="comment-form-comment"><label for="comment">Comment</label> <textarea id="comment" name="comment" cols="45" rows="8"  aria-required="true" required="required"></textarea></p><p class="comment-form-author"><label for="author">Name <span class="required">*</span></label> <input x-autocompletetype="name-full" id="author" name="author" type="text" value="" size="30" aria-required='true' required='required' /></p>
+<p class="comment-form-email"><label for="email">Email <span class="required">*</span></label> <input x-autocompletetype="email" id="email" name="email" type="text" value="" size="30" aria-describedby="email-notes" aria-required='true' required='required' /></p>
+<p class="comment-form-url"><label for="url">Website</label> <input id="url" name="url" type="text" value="" size="30" /></p>
+<p class="form-submit"><input name="submit" type="submit" id="submit" class="submit" value="Post Comment" /> <input type='hidden' name='comment_post_ID' value='7111' id='comment_post_ID' />
+<input type='hidden' name='comment_parent' id='comment_parent' value='0' />
+</p><p style="display: none;"><input type="hidden" id="akismet_comment_nonce" name="akismet_comment_nonce" value="3fc5e0479f" /></p><script src="http://esr.ibiblio.org/?live-comment-preview.js" type="text/javascript"></script><div id="commentPreview"></div><p class="comment-subscription-form"><input type="checkbox" name="subscribe_comments" id="subscribe_comments" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-label" for="subscribe_comments">Notify me of follow-up comments by email.</label></p><p class="comment-subscription-form"><input type="checkbox" name="subscribe_blog" id="subscribe_blog" value="subscribe" style="width: auto; -moz-appearance: checkbox; -webkit-appearance: checkbox;" /> <label class="subscribe-label" id="subscribe-blog-label" for="subscribe_blog">Notify me of new posts by email.</label></p><p style="display: none;"><input type="hidden" id="ak_js" name="ak_js" value="56"/></p>				</form>
+					</div><!-- #respond -->
+		
+				
+			</div><!-- #content -->
+		</div><!-- #primary -->
+		
+		<div id="secondary" class="widget-area" role="complementary">
+			<aside id="tip_jar-2" class="widget widget_tip_jar"><h3 class="widget-title">Tip Jar</h3><p class="widget_tip_desc">Donate here to support my open-source projects. Small but continuing donations via Patreon help more than one-time donations via PayPal.</p><p><form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick"/>
+<input type="hidden" name="hosted_button_id" value="6WRKTJRAUZF7U"/>
+<input type="image" src="https://www.paypalobjects.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" name="submit" alt="PayPal - The safer, easier way to pay online!"/>
+<img alt="" border="0" src="https://www.paypalobjects.com/en_US/i/scr/pixel.gif" width="1" height="1"/>
+</form>
+<div>
+<a href="https://www.patreon.com/esr"><img src="https://www.patreon.com/images/patreon_navigation_logo_negative.png" alt="Patreon"/></a>
+</div>
+</p></aside><aside id="quotescollection" class="widget quotescollection_widget"><h3 class="widget-title">Random Quote</h3>
+<div id="quotescollection_randomquote-0" class="quotescollection_randomquote"><p><q>The difference between science and the fuzzy subjects is that science requires reasoning, while those other subjects merely require scholarship.</q> <cite>&mdash;&nbsp;<span class="quotescollection_author">Lazarus Long</span></cite></p><script type="text/javascript">
+<!--
+document.write("<p class=\"quotescollection_nextquote\" id=\"quotescollection_nextquote-0\"><a class=\"quotescollection_refresh\" style=\"cursor:pointer\" onclick=\"quotescollection_refresh(0, 16, 1, 0, '', 500, 0, 1);\">Next quote&nbsp;&raquo;<\/a><\/p>")
+//-->
+</script>
+</div></aside><aside id="archives-4" class="widget widget_archive"><h3 class="widget-title">Archives</h3>		<ul>
+			<li><a href='http://esr.ibiblio.org/?m=201604'>April 2016</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201603'>March 2016</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201602'>February 2016</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201601'>January 2016</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201512'>December 2015</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201511'>November 2015</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201510'>October 2015</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201509'>September 2015</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201508'>August 2015</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201507'>July 2015</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201506'>June 2015</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201505'>May 2015</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201504'>April 2015</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201503'>March 2015</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201502'>February 2015</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201501'>January 2015</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201412'>December 2014</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201411'>November 2014</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201410'>October 2014</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201409'>September 2014</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201408'>August 2014</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201407'>July 2014</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201406'>June 2014</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201405'>May 2014</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201404'>April 2014</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201403'>March 2014</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201402'>February 2014</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201401'>January 2014</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201312'>December 2013</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201311'>November 2013</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201310'>October 2013</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201309'>September 2013</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201308'>August 2013</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201307'>July 2013</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201306'>June 2013</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201305'>May 2013</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201304'>April 2013</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201303'>March 2013</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201302'>February 2013</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201301'>January 2013</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201212'>December 2012</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201211'>November 2012</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201210'>October 2012</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201209'>September 2012</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201208'>August 2012</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201207'>July 2012</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201206'>June 2012</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201205'>May 2012</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201204'>April 2012</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201203'>March 2012</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201202'>February 2012</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201201'>January 2012</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201112'>December 2011</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201111'>November 2011</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201110'>October 2011</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201109'>September 2011</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201108'>August 2011</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201107'>July 2011</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201106'>June 2011</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201105'>May 2011</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201104'>April 2011</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201103'>March 2011</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201102'>February 2011</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201101'>January 2011</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201012'>December 2010</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201011'>November 2010</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201010'>October 2010</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201009'>September 2010</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201008'>August 2010</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201007'>July 2010</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201006'>June 2010</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201005'>May 2010</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201004'>April 2010</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201003'>March 2010</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201002'>February 2010</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=201001'>January 2010</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200912'>December 2009</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200911'>November 2009</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200910'>October 2009</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200909'>September 2009</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200908'>August 2009</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200907'>July 2009</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200906'>June 2009</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200905'>May 2009</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200904'>April 2009</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200903'>March 2009</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200902'>February 2009</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200901'>January 2009</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200812'>December 2008</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200811'>November 2008</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200810'>October 2008</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200809'>September 2008</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200808'>August 2008</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200807'>July 2008</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200806'>June 2008</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200606'>June 2006</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200605'>May 2006</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200604'>April 2006</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200603'>March 2006</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200602'>February 2006</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200601'>January 2006</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200512'>December 2005</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200511'>November 2005</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200509'>September 2005</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200508'>August 2005</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200507'>July 2005</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200502'>February 2005</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200501'>January 2005</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200412'>December 2004</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200411'>November 2004</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200410'>October 2004</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200409'>September 2004</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200402'>February 2004</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200401'>January 2004</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200312'>December 2003</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200311'>November 2003</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200310'>October 2003</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200309'>September 2003</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200308'>August 2003</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200307'>July 2003</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200306'>June 2003</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200305'>May 2003</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200304'>April 2003</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200212'>December 2002</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200211'>November 2002</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200210'>October 2002</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200209'>September 2002</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200207'>July 2002</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200206'>June 2002</a></li>
+	<li><a href='http://esr.ibiblio.org/?m=200205'>May 2002</a></li>
+		</ul>
+		</aside><aside id="meta-4" class="widget widget_meta"><h3 class="widget-title">Meta</h3>			<ul>
+						<li><a href="http://esr.ibiblio.org/wp-login.php">Log in</a></li>
+			<li><a href="http://esr.ibiblio.org/?feed=rss2">Entries <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="http://esr.ibiblio.org/?feed=comments-rss2">Comments <abbr title="Really Simple Syndication">RSS</abbr></a></li>
+			<li><a href="https://wordpress.org/" title="Powered by WordPress, state-of-the-art semantic personal publishing platform.">WordPress.org</a></li>			</ul>
+			</aside>		</div><!-- #secondary .widget-area -->
+		
+	</div><!-- #main -->
+	
+</div><!-- #page -->
+<footer id="footer" class="clearfix" role="contentinfo">
+	<section id="colophon" class="clearfix">
+				<div id="top-scroll">
+			<a href="#admired-top" class="scroll" title="Scroll to Top"><div id="scroll-top"></div></a>
+		</div>
+			
+	<div id="supplementary" class="three">
+				<div id="first" class="widget-area" role="complementary">
+			<aside id="image-5" class="widget widget_image"><h3 class="widget-title">Hacker Emblem</h3><div class="jetpack-image-container"><a href="http://www.catb.org/~esr/hacker-emblem/"><img src="http://esr.ibiblio.org/graphics/glider.png" class="alignnone" /></a></div>
+</aside>		</div><!-- #first .widget-area -->
+		
+				<div id="second" class="widget-area" role="complementary">
+			<aside id="image-2" class="widget widget_image"><h3 class="widget-title">Eric Conspiracy</h3><div class="jetpack-image-container"><a href="http://catb.org/~esr/ecsl"><img src="http://esr.ibiblio.org/graphics/ecsllogo.png" class="alignnone" /></a></div>
+</aside>		</div><!-- #second .widget-area -->
+		
+				<div id="third" class="widget-area" role="complementary">
+			<aside id="image-3" class="widget widget_image"><h3 class="widget-title">Anti-Idiotarian Manifesto</h3><div class="jetpack-image-container"><a href="http://www.catb.org/~esr/aim/"><img src="http://www.catb.org/~esr/aim/aim-off.png" class="alignnone" width="100" height="40" /></a></div>
+</aside>		</div><!-- #third .widget-area -->
+			</div><!-- #supplementary -->			<div id="footer-html">
+							</div><!-- #footer-html -->
+			<div id="footer-info">
+								<div id="site-info">&copy; 2016					<a href="http://esr.ibiblio.org/" title="Armed and Dangerous" rel="home">
+						Armed and Dangerous					</a>
+				</div><!-- #site-info -->
+								<div id="site-generator">
+										<a href="http://wp-ultra.com/" rel="generator">Admired Theme</a>
+				</div>
+			</div>
+	</section>
+</footer><!-- #footer -->
+
+	<script type="text/javascript">
+	  window.___gcfg = {lang: 'en'};
+	
+	  (function() {
+	    var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
+	    po.src = 'https://apis.google.com/js/plusone.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
+	  })();
+	</script>	<div style="display:none">
+	<div class="grofile-hash-map-28f83617f4503880c88d2ed36ea5b36b">
+	</div>
+	<div class="grofile-hash-map-beb3111e5b8856052578551d6d033e25">
+	</div>
+	<div class="grofile-hash-map-2f5660e75398aeb2c199729d65f54e16">
+	</div>
+	<div class="grofile-hash-map-bc15444a580f1dbafbe4b355bfea8b24">
+	</div>
+	<div class="grofile-hash-map-8a94d7d4e630b68c4d684a1b86a91acf">
+	</div>
+	<div class="grofile-hash-map-e1a9bed3bf6ee54cf86f952c87059afc">
+	</div>
+	<div class="grofile-hash-map-a5beab256f93a6a49f39b9afc5fe35c1">
+	</div>
+	<div class="grofile-hash-map-f575f9e58841f1a090017077065e627b">
+	</div>
+	<div class="grofile-hash-map-9258bc838b494f745e860b8d35698b5e">
+	</div>
+	<div class="grofile-hash-map-3a0504845c920c9d6cb0c55777ef6256">
+	</div>
+	<div class="grofile-hash-map-93d4a63138e0241cc28b18f717ae9116">
+	</div>
+	<div class="grofile-hash-map-1f5ac607b2f659a6785e3c79c219eb54">
+	</div>
+	<div class="grofile-hash-map-01b80d97954a0792c512752c97e0fc78">
+	</div>
+	<div class="grofile-hash-map-59459304616380a439c2ca6079f8fd00">
+	</div>
+	<div class="grofile-hash-map-f50e39b7c573cf5fc4f6a9f1151481d5">
+	</div>
+	<div class="grofile-hash-map-131a55e547345f3123af2c4ddd49e6a6">
+	</div>
+	<div class="grofile-hash-map-171f31bbde4e195c33898abb5eed2c22">
+	</div>
+	<div class="grofile-hash-map-c8c0e5b0754770c5e1f7419a0698ecff">
+	</div>
+	<div class="grofile-hash-map-ed2282b9cf41911305f37dd2b17ffd60">
+	</div>
+	<div class="grofile-hash-map-3a1f68638c765096502abb3e56274386">
+	</div>
+	<div class="grofile-hash-map-63a571f458dde37c4148eaa9b70e9ed7">
+	</div>
+	<div class="grofile-hash-map-70564a47fec89504b505a9b824c71183">
+	</div>
+	<div class="grofile-hash-map-432b7e40ae1fef7a9e300a9725603a01">
+	</div>
+	<div class="grofile-hash-map-f9633c08d9a20256e8bd134b6ede4aac">
+	</div>
+	<div class="grofile-hash-map-8afd542f10d6c009d409c94c4c3d2564">
+	</div>
+	<div class="grofile-hash-map-878757a75e28b88e3a61913a2622e07c">
+	</div>
+	<div class="grofile-hash-map-31260617ed764313bac01797b0e293e8">
+	</div>
+	<div class="grofile-hash-map-66d13c2c9dcf607236211e5f78b323b9">
+	</div>
+	<div class="grofile-hash-map-e49abfb7cda7c2e4a99b5b8db5512c4e">
+	</div>
+	<div class="grofile-hash-map-ea74426a82b2c4b9b7a13ef69ddb07d2">
+	</div>
+	<div class="grofile-hash-map-89bd487cb4df4b9d9aa838ce6b2eb21b">
+	</div>
+	<div class="grofile-hash-map-1f12138cf5445e8a7c1098d1e9e694a9">
+	</div>
+	<div class="grofile-hash-map-9a7fd6eb6de2efb87aea64a7969d3296">
+	</div>
+	<div class="grofile-hash-map-b0e8f7429a6351d367e92a8fed85020e">
+	</div>
+	<div class="grofile-hash-map-814b91f4ca4eb8242c5abe05dcc29058">
+	</div>
+	<div class="grofile-hash-map-4124ae7262e1d0493606c15ac1e19685">
+	</div>
+	<div class="grofile-hash-map-d1b26f7f5bf496afa58f8aa562d53a2e">
+	</div>
+	<div class="grofile-hash-map-5ffd0082617dfbafec16298cd183bc6b">
+	</div>
+	<div class="grofile-hash-map-13a902b5c16e5b909b7b55ace06a64ba">
+	</div>
+	<div class="grofile-hash-map-40399a7f81b22be79f1ec58612e461b5">
+	</div>
+	<div class="grofile-hash-map-666d23beb50544251806542895691f62">
+	</div>
+	<div class="grofile-hash-map-4b7353799f6987dc80fc1fab80c7178c">
+	</div>
+	<div class="grofile-hash-map-a59fe1bc02c2dee45964f661d878c230">
+	</div>
+	</div>
+<script type='text/javascript' src='http://esr.ibiblio.org/wp-content/plugins/akismet/_inc/form.js?ver=3.1.5'></script>
+<link rel='stylesheet' id='gplus-css'  href='http://esr.ibiblio.org/wp-content/plugins/jetpack/modules/gplus-authorship/style.css?ver=4.4' type='text/css' media='all' />
+<script type='text/javascript' src='http://s0.wp.com/wp-content/js/devicepx-jetpack.js?ver=201617'></script>
+<script type='text/javascript' src='http://s.gravatar.com/js/gprofiles.js?ver=2016Apraa'></script>
+<script type='text/javascript'>
+/* <![CDATA[ */
+var WPGroHo = {"my_hash":""};
+/* ]]> */
+</script>
+<script type='text/javascript' src='http://esr.ibiblio.org/wp-content/plugins/jetpack/modules/wpgroho.js?ver=4.4'></script>
+<script type='text/javascript' src='http://esr.ibiblio.org/wp-includes/js/wp-embed.min.js?ver=4.4'></script>
+<script type='text/javascript' src='//apis.google.com/js/plusone.js?ver=4.4'></script>
+
+<script type="text/javascript">
+	jQuery('a[href^="#admired-top"]').live('click',function(event){
+		event.preventDefault();
+		var target_offset = jQuery(this.hash).offset() ? jQuery(this.hash).offset().top : 0;
+		jQuery('html, body').animate({scrollTop:target_offset}, 800);
+	});
+</script>
+
+	<script src="http://stats.wordpress.com/e-201617.js" type="text/javascript"></script>
+	<script type="text/javascript">
+	st_go({v:'ext',j:'1:3.0.2',blog:'31793420',post:'7111',tz:'-4'});
+	var load_cmc = function(){linktracker_init(31793420,7111,2);};
+	if ( typeof addLoadEvent != 'undefined' ) addLoadEvent(load_cmc);
+	else load_cmc();
+	</script>
+</body>
+</html>

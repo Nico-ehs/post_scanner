@@ -13,10 +13,10 @@ class site_parser():
         post=entry_parser(get_post(text),self.fn_s_post,post_data).output
         post[0]=[self.sitename]+post[0]
         new_comments=entry_parser(get_comments(text),self.fn_s_commets,comment_data).output
-        print(str(new_comments)[:50])
+        # print(str(new_comments)[:50])
         for x in range(len(new_comments)):
             new_comments[x]=[self.sitename,post[0][2]]+new_comments[x]
-        print(str(new_comments)[:50])
+        # print(str(new_comments)[:50])
         self.posts+=post
         print(len(self.posts))
         self.comments+=new_comments

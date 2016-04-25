@@ -1,1 +1,1 @@
-['http://slatestarcodex.com/']
+['http://esr.ibiblio.org/', 'http://esr.ibiblio.org/?p=7151', 'http://esr.ibiblio.org/?p=7139', 'http://esr.ibiblio.org/?p=7128', 'http://esr.ibiblio.org/?p=7123', 'http://esr.ibiblio.org/?p=7111', 'http://esr.ibiblio.org/?p=7095']
