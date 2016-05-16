@@ -1,1 +1,1 @@
-['SSC', 'ESR', 'twig']
+['ESR', 'twig']

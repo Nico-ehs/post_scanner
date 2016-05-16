@@ -1,6 +1,5 @@
 import os
 
-
 class site_parser():
     def __init__(self,sitename,fn_s_post,fn_s_commets):
         self.sitename=sitename
@@ -149,6 +148,33 @@ def double_selection_fn_gen(s1,e1,s2,e2):
     r = lambda x: selection(selection(x,s1,e1),s2,e2)
     return r
 
+
+# def format_name_ers(fn)
+#     r = lambda x: selection(selection(x,s1,e1),s2,e2)
+#     return r
+
+def save_file(filename,text,path):
+    m_dir=os.getcwd()
+    os.chdir(m_dir+path)
+    f_out=open(filename, "w", encoding='utf-8')
+    f_out.write(text)
+    f_out.close
+    os.chdir(m_dir)
+    return True
+
+
+def load_file(filename,path):
+    m_dir=os.getcwd()
+    os.chdir(m_dir+path)
+    f_in=open(filename, "r", encoding='utf-8').read()
+    os.chdir(m_dir)
+    return f_in
+
+
+
+
+
+
 # comments
 
 # fn1 authour
@@ -190,20 +216,6 @@ fn9=no_tags_selection_fn_gen('<span class="author vcard">',
 # fn10 text
 fn10=no_tags_selection_fn_gen('<div class="entry-content">',
                               '</div><!-- .entry-content -->')
-##
-##
-##fn6=[]
-##<meta property="og:title" content="Taking Root 1.1">
-##<meta property="article:published_time" content="2014-12-24T00:01:00+00:00">
-##<meta property="article:modified_time" content="2015-03-14T04:20:25+00:00">
-##<meta property="article:author" content="https://twigserial.wordpress.com/author/wildbow/">
-##<meta property="og:site_name" content="Twig">
-##
-### post section
-##<meta property="og:type" content="article">
-##</article><!-- #post-## -->
-##
-
 
 wordpress_functions_post_1=[fn6,
                                 fn7,
@@ -226,24 +238,20 @@ fns_2=wordpress_functions_post_1
 # open("post_test1.html", "w", encoding='utf-8').write(str(post(get_post(t1),fns_2).output()))
 
 
-def save_file(filename,text,path):
-    m_dir=os.getcwd()
-    os.chdir(m_dir+path)
-    f_out=open(filename, "w", encoding='utf-8')
-    f_out.write(text)
-    f_out.close
-    os.chdir(m_dir)
-    return True
 
 
-def load_file(filename,path):
-    m_dir=os.getcwd()
-    os.chdir(m_dir+path)
-    f_in=open(filename, "r", encoding='utf-8').read()
-    os.chdir(m_dir)
-    return f_in
 
 
+# def esr_funtions:
 parser=site_parser("twig",fns_2,fns_1)
+parser.full_scan()
+
+
+fns_1[0]=no_tags_selection_fn_gen('<div class="comment-author vcard">',
+                             '</span> on')
+                             
+fns_1[1]=selection_fn_gen('<time pubdate datetime="', '">')
+                        
+parser=site_parser("ESR",fns_2,fns_1)
 parser.full_scan()
 
