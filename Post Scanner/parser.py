@@ -171,7 +171,8 @@ def load_file(filename,path):
     return f_in
 
 
-
+def remove_extra_pages():
+    
 
 
 

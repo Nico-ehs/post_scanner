@@ -44,12 +44,15 @@ class site_data():
         return r
     def save_output(self):
         make_site_dir_1(self.sitename)
+        page_filter
         for x in self.pages:
             save_page(x.text, x.url, self.sitename)
         path='/site data/'+self.sitename
         save_file('pagelist.txt',str([self.pagelist,self.unscanned_pages]),path)
         get_sitelist()
         return 1
+    def page_filter(self):
+        self.pages.remove(self.sitename)
 ##    def load_data(self):
 ##        pages=load_site(self.sitename)
 
@@ -192,6 +195,8 @@ def link_fn1(text):
     links=extract_links.extract_m(text)
     vaild_links=[x for x in links if linktest_esr(x)==1]
     return vaild_links
+    
+def remove_extra_pages():
 
 # url="https://twigserial.wordpress.com/2014/12/24/taking-root-1-1/"
 # scan1=site_data('twig', url, link_fn1)
