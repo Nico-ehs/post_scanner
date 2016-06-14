@@ -34,13 +34,13 @@ def load_file(filename,path):
     
 def name_test(sitename):
     m_dir=os.getcwd()
-    os.chdir(m_dir+'/site data/'+sitename)
-    comments=eval(load_file("","comments.txt"))
-    names=list(map((lambda x: x[3],comments)))
-    for x in names[:5]:
+    # os.chdir(m_dir+'/site data/'+sitename)
+    comments=eval(load_file("comments.txt",'/site data/'+sitename))
+    names=list(map((lambda x: x[3]),comments))
+    for x in names[:100]:
         print(x)
-        print("/n")
+    return 1
         
-        
+name_test("twig")
     
 
