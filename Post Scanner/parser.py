@@ -246,8 +246,8 @@ fns_2=wordpress_functions_post_1
 
 
 # def esr_funtions:
-parser=site_parser("twig",fns_2,fns_1)
-parser.full_scan()
+# parser=site_parser("twig",fns_2,fns_1)
+# parser.full_scan()
 
 
 fns_1[0]=no_tags_selection_fn_gen('<div class="comment-author vcard">',
@@ -255,6 +255,6 @@ fns_1[0]=no_tags_selection_fn_gen('<div class="comment-author vcard">',
                              
 fns_1[1]=selection_fn_gen('<time pubdate datetime="', '">')
                         
-# parser=site_parser("ESR",fns_2,fns_1)
-# parser.full_scan()
+parser=site_parser("ESR",fns_2,fns_1)
+parser.full_scan()
 

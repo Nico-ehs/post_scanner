@@ -40,7 +40,18 @@ def name_test(sitename):
     for x in names[:100]:
         print(x)
     return 1
+    
+def post_test(sitename):
+    m_dir=os.getcwd()
+    # os.chdir(m_dir+'/site data/'+sitename)
+    posts=eval(load_file("posts.txt",'/site data/'+sitename))
+    names=list(map((lambda x: x[2]),posts))
+    for x in names:
+        print(x)
+    return 1
         
-name_test("twig")
+# name_test("twig")
+post_test("ESR")
+
     
 
