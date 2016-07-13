@@ -17,7 +17,6 @@ class site_data():
         self.unscanned_pages=[site_url]
     def get_links(self,page):
         links=remove_multiple(self.link_extractor(page.text))
-        print(page.url)
         return [x for x in links if (x not in (self.pagelist+self.unscanned_pages))]
     def scan_page(self):
         page=requests.get(self.unscanned_pages[0])
@@ -28,33 +27,33 @@ class site_data():
         self.unscanned_pages=self.unscanned_pages[1:]
     def full_scan(self):
         print("test1.5")
-        while self.unscanned_pages != [] and len(self.pages) <= 6:
-            print('pagelist=')
-            print(str(self.pagelist))
-            print('unsscanned pages=')
-            print(str(self.unscanned_pages))
+        while self.unscanned_pages != [] and len(self.pages) <= 20:
+            # print('pagelist=')
+            # print(str(self.pagelist))
+            # # print('unsscanned pages=')
+            # print(str(self.unscanned_pages))
             self.scan_page()
-            print('pagelist=')
-            print(str(self.pagelist))
-            print('unsscanned pages=')
-            print(str(self.unscanned_pages))
+        #     # print('pagelist=')
+        #     print(str(self.pagelist))
+        #     # print('unsscanned pages=')
+        #     print(str(self.unscanned_pages))
         print(str(self.unscanned_pages))
     def output(self):
         r=[self.pages]
         return r
     def save_output(self):
         make_site_dir_1(self.sitename)
-        page_filter
+        # self.page_filter
         for x in self.pages:
             save_page(x.text, x.url, self.sitename)
         path='/site data/'+self.sitename
         save_file('pagelist.txt',str([self.pagelist,self.unscanned_pages]),path)
-        get_sitelist()
         return 1
     def page_filter(self):
         self.pages.remove(self.sitename)
-##    def load_data(self):
-##        pages=load_site(self.sitename)
+    def load_data(scanned_pages, unscanned_pages):
+        self.pagelist=
+        self.unscanned_pages=[site_url]
 
 
 
@@ -163,7 +162,7 @@ def get_sitelist():
 
 
 
-def linktest_1(link):
+def linktest_twig(link):
     r=1
     linktest=[]
     linktest+=["https://twigserial.wordpress.com/20" in link]
@@ -191,30 +190,37 @@ def linktest_esr(link):
             r=0
     return r
 
-def link_fn1(text):
+def link_fn_twig(text):
+    links=extract_links.extract_m(text)
+    print("test2")
+    vaild_links=[x for x in links if linktest_twig(x)==1]
+    return vaild_links
+    
+def link_fn_esr(text):
     links=extract_links.extract_m(text)
     vaild_links=[x for x in links if linktest_esr(x)==1]
     return vaild_links
     
-def remove_extra_pages():
+    
 
-# url="https://twigserial.wordpress.com/2014/12/24/taking-root-1-1/"
-# scan1=site_data('twig', url, link_fn1)
+
+
+
+
+url="https://twigserial.wordpress.com/2014/12/24/taking-root-1-1/"
+scan1=site_data('Twig', url, link_fn_twig)
+scan1.full_scan()
+scan1.save_output()
+get_sitelist()
+
+# url="http://esr.ibiblio.org/"
+# scan1=site_data('ESR', url, link_fn1)
 # scan1.full_scan()
 # f_out=open('test.txt', "w", encoding='utf-8')
 # f_out.write(str(scan1.pagelist))
 # f_out.close
 # scan1.save_output()
 # get_sitelist()
-
-url="http://esr.ibiblio.org/"
-scan1=site_data('ESR', url, link_fn1)
-scan1.full_scan()
-f_out=open('test.txt', "w", encoding='utf-8')
-f_out.write(str(scan1.pagelist))
-f_out.close
-scan1.save_output()
-get_sitelist()
 
 
 

@@ -171,10 +171,6 @@ def load_file(filename,path):
     return f_in
 
 
-# def remove_extra_pages():
-    
-
-
 
 # comments
 
@@ -250,11 +246,11 @@ fns_2=wordpress_functions_post_1
 # parser.full_scan()
 
 
-fns_1[0]=no_tags_selection_fn_gen('<div class="comment-author vcard">',
-                             '</span> on')
+# fns_1[0]=no_tags_selection_fn_gen('<div class="comment-author vcard">',
+#                              '</span> on')
                              
-fns_1[1]=selection_fn_gen('<time pubdate datetime="', '">')
+# fns_1[1]=selection_fn_gen('<time pubdate datetime="', '">')
                         
-parser=site_parser("ESR",fns_2,fns_1)
-parser.full_scan()
+# parser=site_parser("ESR",fns_2,fns_1)
+# parser.full_scan()
 

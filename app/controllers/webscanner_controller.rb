@@ -49,6 +49,7 @@ class WebscannerController < ApplicationController
             end
         end
         MetadataCreationController.generate_authors
+        MetadataCreationController.get_days_after
         # posts=eval(File.read("post_test.html"))
         # posts.each do |el|
         #     Post.create(html_id: el[0], title: el[1], author: el[2], time: el[3], text: el[4])

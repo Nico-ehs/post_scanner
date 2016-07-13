@@ -27,5 +27,14 @@ class MetadataCreationController < ApplicationController
         end
     end
     
+    def self.get_days_after
+        Comment.all.each do |el|
+             el.days_after=((el.comment_time.to_date)-(el.post.post_time.to_date)).to_i
+             el.save
+        end
+        5
+    end
     
 end
+
+# <%= line_chart Feat.group(:goal_id).group_by_week(:created_at).count %>

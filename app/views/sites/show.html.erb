@@ -1,10 +1,7 @@
 <%= "#{@site.sitename} Posts:  #{@posts.count}" %>
 
 
-<li>
-  <%= "Posts by month" %>
-  <%= column_chart remove_empty(@site.posts.group_by_month(:post_time).count) %>
-</li>
+
 <li>
   <%= "Comments by day" %>
   <%= column_chart remove_empty(@site.comments.group_by_day(:comment_time).count).map {|k, v| [k.to_datetime().to_date, v] } %>

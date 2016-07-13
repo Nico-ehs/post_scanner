@@ -1,9 +1,23 @@
 rails server -b $IP -p $PORT
 
-<%= column_chart remove_empty(@site.comments.group_by_day(:comment_time).count).map {|k, v| [k.to_datetime().to_date, v] }.to_h %>
+to do
 
-authors map
+add formating on main page and sites
+
+add second site comparison chart
 
 
-authors.split(" |")[0]
-[0..-3]
+last
+
+sort posts
+
+add time selection
+
+add post selection
+
+add site comparison
+
+
+to consider
+
+

@@ -32,6 +32,7 @@ ActiveRecord::Schema.define(version: 20160226204434) do
     t.integer  "html_id"
     t.string   "depth"
     t.integer  "comment_size"
+    t.integer  "days_after"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

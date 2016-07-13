@@ -1,8 +1,30 @@
 <ul>
+  
+  
+  <h2>Comment Rate for First 10 Days</h2>
+  <%= column_chart @chart1 %>
+  
+  <h2></h2>
+  
+  <h2>Ratio of Post Length to Comments</h2>
+  <div class="row">
+  <% @ratios.each do |ratio| %>
+    <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6">
+      <%= "#{ratio[0]} percent of text of Posts and Comments" %>
+      <%= pie_chart [["Posts",100*(1/(ratio[1]+1))],["Comments",100*(ratio[1]/(ratio[1]+1))]] %>
+    </div>
+  <% end %>
+  </div>
+  
+  <h2></h2>
+
+
+  <h2>Individual Sites</h2>
   <% @sites.each do |site| %>
-    <li>
-      <%= link_to "#{site.sitename}", site_url(site) %>
+      <h3>
+      <%= link_to "#{site.sitename.capitalize}", site_url(site) %>
       <%= "Posts: #{site.posts.count} Comments: #{site.comments.count}  " %>
-    </li>
+      
+      </h3>
   <% end %>
 </ul>

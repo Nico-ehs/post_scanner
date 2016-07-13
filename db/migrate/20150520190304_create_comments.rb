@@ -9,6 +9,7 @@ class CreateComments < ActiveRecord::Migration
       t.integer :html_id
       t.string :depth
       t.integer :comment_size
+      t.integer :days_after
       
       
       t.timestamps
