@@ -3,7 +3,7 @@ class SitesController < ApplicationController
     
     def show
         @site=Site.find(params[:id])
-        @posts=@site.posts
+        @posts=@site.posts.sort_by(&:title)
     end
     
     def index

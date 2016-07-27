@@ -42,6 +42,8 @@ class WebscannerController < ApplicationController
 	    	    end
 	        end
 	        comments=eval(File.read("Post Scanner//site data//#{site}//comments.txt"))
+	        print "test"
+	        print "/n"
 	        comments.each do |el|
 	            comment_post_id=Post.where("site_id = #{Site.find_by_sitename(el[0]).id} AND title = '#{el[1]}'")[0].id
 		        Comment.create(post_id: comment_post_id, html_id: el[2], comment_author_name: el[3], comment_time: el[4],

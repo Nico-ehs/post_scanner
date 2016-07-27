@@ -1,29 +1,32 @@
-<%= "#{@site.sitename} Posts:  #{@posts.count}" %>
+<h2><%= "#{@site.sitename}   Posts: #{@site.posts.count} Comments: #{@site.comments.count}" %></h2>
 
 
 
-<li>
-  <%= "Comments by day" %>
+
+<h2>Individual Posts</h2>
+<% @posts.each do |post| %>
+  <h3>
+    <%= link_to "#{post.title}", post_url(post) %>
+    <%= "Comments: #{post.comments.count}" %>
+  </h3>
+<% end %>
+
+
+
+
+  <h2><%= "Comments by day" %></h2>
   <%= column_chart remove_empty(@site.comments.group_by_day(:comment_time).count).map {|k, v| [k.to_datetime().to_date, v] } %>
-</li>
-<li>
-  <%= "Commenters" %>
+
+
+  <h2><%= "Commenters" %></h2>
   <%= column_chart remove_empty(@site.comments.group(:comment_author_name).count) %>
-</li>
-<li>
-  <%= "Commenters with 10+ comments" %>
+
+  <h2><%= "Commenters with 10+ comments" %></h2>
   <%= column_chart remove_empty(@site.comments.group(:comment_author_name).having("COUNT(*) > 10").size) %>
-</li>
 
 
 
 
 
-<ul>
-  <% @posts.each do |post| %>
-    <li>
-      <%= link_to "#{post.title}", post_url(post) %>
-      <%= "Comments: #{post.comments.count}" %>
-  <% end %>
-</ul>
+
 
