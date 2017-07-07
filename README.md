@@ -1,4 +1,4 @@
-==Post Scanner==
+# Post Scanner
 
 This rails app that creates and charts metadata on blog comments. This is a early stage work in progress and I'm still testing out some basic features. The app is being run at:
 
