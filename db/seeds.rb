@@ -18,3 +18,6 @@
 #     Comment.create(html_id: el[0], author: el[1], time: DateTime.parse(el[2]), depth: el[3], text: el[4], post_id: post_id)
 # end
 
+WebscannerController.load_data()
+
+

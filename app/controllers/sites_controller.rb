@@ -28,6 +28,7 @@ class SitesController < ApplicationController
     end
     
     def first_10_days(data)
+        #
         site_rate=Hash.new(0)
         (0..9).each {|n| site_rate[n]=0 }
         site_rate.each {|key, count| (site_rate[key] += data[key]) if data.has_key?(key)}
@@ -36,6 +37,7 @@ class SitesController < ApplicationController
     end
     
     def char_ratio(site)
+        # Returns the comparative 
         site.comments.sum('comment_size')/(1.0*site.posts.sum('post_size'))
     end
     

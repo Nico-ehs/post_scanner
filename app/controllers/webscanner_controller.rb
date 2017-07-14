@@ -9,11 +9,13 @@ class WebscannerController < ApplicationController
     end
     
     def scan_test
+        # Controler action for intiating the python webscraper
         run_scan
         redirect_to "/webscanner"
     end
     
     def load_test
+        # Controler action for intiating the python webscraper
         system("rake db:reset")
         load_data
         redirect_to "/webscanner"
@@ -29,6 +31,7 @@ class WebscannerController < ApplicationController
     end
     
     def load_data
+        #
         sitelist=eval(File.read("Post Scanner//sitelist.txt"))
         sitelist.each do |site|
             if Site.find_by_sitename(site)==nil
