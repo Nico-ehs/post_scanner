@@ -8,4 +8,15 @@ I'm using a few posts from:
 
 - https://twigserial.wordpress.com/ 
 
-and For chart display it using the chartkick gem and highcharts. Other UI features haven't been implemented. For web-scraping it uses separate python code in the "Post Scanner" folder. It currently can do WordPress blog though it requires tweaking for each site.
+For the chart display it uses the chartkick gem and Highcharts. For web-scraping it uses separate python code in the "Post Scanner" folder.
+
+## Setup CMD Line
+
+gem install rails
+bundle install
+sudo service postgresql start
+psql -c "create user username with password 'password' SUPERUSER"
+psql -c "create database myapp_development"
+rake db:migrate
+rake db:seed
+rails server -b $IP -p $PORT
