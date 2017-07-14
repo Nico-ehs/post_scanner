@@ -12,6 +12,7 @@ For the chart display it uses the chartkick gem and Highcharts. For web-scraping
 
 ## Setup CMD Line
 
+```
 gem install rails
 bundle install
 sudo service postgresql start
@@ -20,3 +21,4 @@ psql -c "create database myapp_development"
 rake db:migrate
 rake db:seed
 rails server -b $IP -p $PORT
+```
