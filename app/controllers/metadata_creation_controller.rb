@@ -39,5 +39,3 @@ class MetadataCreationController < ApplicationController
     end
     
 end
-
-# <%= line_chart Feat.group(:goal_id).group_by_week(:created_at).count %>

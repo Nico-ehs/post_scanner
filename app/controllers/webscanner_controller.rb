@@ -15,13 +15,14 @@ class WebscannerController < ApplicationController
     end
     
     def load_test
-        # Controler action for intiating the python webscraper
+        # Controler action for load webscrapper data
         system("rake db:reset")
         load_data
         redirect_to "/webscanner"
     end
     
     def run_scan
+        # Runs the webscrapper
         # Dir.chdir("Post Scanner") do
         #     system('python3 "post scanner.py"')
         #     system('python3 "parser.py"') 
@@ -30,8 +31,8 @@ class WebscannerController < ApplicationController
         # system("python webscanner.py")
     end
     
-    def load_data
-        #
+    def self.load_data
+        # Loads the the text files outputed by the webscrapper into the database
         sitelist=eval(File.read("Post Scanner//sitelist.txt"))
         sitelist.each do |site|
             if Site.find_by_sitename(site)==nil
