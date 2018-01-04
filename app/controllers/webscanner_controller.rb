@@ -23,7 +23,7 @@ class WebscannerController < ApplicationController
     
     def run_scan
         # Runs the webscrapper
-        # Dir.chdir("Post Scanner") do
+        # Dir.chdir("BlogScraper") do
         #     system('python3 "post scanner.py"')
         #     system('python3 "parser.py"') 
         # end
@@ -33,19 +33,19 @@ class WebscannerController < ApplicationController
     
     def self.load_data
         # Loads the the text files outputed by the webscrapper into the database
-        sitelist=eval(File.read("Post Scanner//sitelist.txt"))
+        sitelist=eval(File.read("BlogScraper//sitelist.txt"))
         sitelist.each do |site|
             if Site.find_by_sitename(site)==nil
                 Site.create(sitename: site)
             end
-	        posts=eval(File.read("Post Scanner//site data//#{site}//posts.txt"))
+	        posts=eval(File.read("BlogScraper//site data//#{site}//posts.txt"))
 	        posts.each do |el|
 	            unless el[2]==""
 	    	        Post.create(site_id: Site.find_by_sitename(el[0]).id, html_id: el[1], title: el[2], post_author_name: el[3],
 	    	        post_time: el[4], text: el[5], post_size: el[5].size)
 	    	    end
 	        end
-	        comments=eval(File.read("Post Scanner//site data//#{site}//comments.txt"))
+	        comments=eval(File.read("BlogScraper//site data//#{site}//comments.txt"))
 	        print "test"
 	        print "/n"
 	        comments.each do |el|
