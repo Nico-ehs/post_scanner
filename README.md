@@ -15,15 +15,16 @@ For the chart display it uses the chartkick gem and Highcharts. For web-scraping
 
 Tracks *reader enthusiasm*, by calculating the comment rate of posts within the first 10 days, broken down by blog:
 
-![Post-Scanner-Comment-Rate](https://raw.githubusercontent.com/Nico-ehs/post_scanner/tree/master/img/Post-Scanner-Comment-Rate.PNG)
+![Post-Scanner-Comment-Rate](https://raw.githubusercontent.com/Nico-ehs/post_scanner/master/img/Post-Scanner-Comment-Rate.PNG)
 
 Looks at reader engagement vs. popularity, by measuring the ratio of post-lengths to comments
 
-![Post-Scanner-Ratio](https://raw.githubusercontent.com/Nico-ehs/post_scanner/tree/master/img/Post-Scanner-Ratio.PNG)
+![Post-Scanner-Ratio](https://raw.githubusercontent.com/Nico-ehs/post_scanner/master/img/Post-Scanner-Ratio.PNG)
 
 Identifies what content is being engaged with, and by whom, by tracking comment volume for individual posts, and individual users:
 
-![Post-Scanner-Individual-Posts](https://raw.githubusercontent.com/Nico-ehs/post_scanner/tree/master/img/Post-Scanner-Individual-Posts.PNG)
+![Post-Scanner-Individual-Posts](https://raw.githubusercontent.com/Nico-ehs/post_scanner/master/img/Post-Scanner-Individual-Posts.PNG)
+
 
 ![Post-Scanner-10-comments](https://raw.githubusercontent.com/Nico-ehs/post_scanner/master/img/Post-Scanner-10-comments.PNG)
 
